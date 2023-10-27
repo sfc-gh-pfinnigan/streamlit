@@ -407,6 +407,9 @@ export class App extends PureComponent<Props, State> {
     if (this.props.hostCommunication.currentState.cacheClearRequested) {
       this.clearCache()
     }
+    if (this.props.hostCommunication.currentState.appHeartbeatRequested) {
+      this.sendAppHeartbeat()
+    }
 
     const { requestedPageScriptHash } =
       this.props.hostCommunication.currentState
@@ -1352,6 +1355,21 @@ export class App extends PureComponent<Props, State> {
       logError("Cannot clear cache: disconnected from server")
     }
     this.props.hostCommunication.onCacheClear()
+  }
+
+  /**
+   * Sends an appHeartbeat message to the server.
+   */
+  sendAppHeartbeat = (): void => {
+    if (this.isServerConnected()) {
+      const backMsg = new BackMsg({ appHeartbeat: true })
+      backMsg.type = "appHeartbeat"
+      this.sendBackMsg(backMsg)
+      console.log("asdf sent a heartbeat")
+    } else {
+      logError("Cannot send app heartbeat: disconnected from server")
+    }
+    this.props.hostCommunication.onSendAppHeartbeat()
   }
 
   /**

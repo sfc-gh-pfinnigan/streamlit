@@ -56,6 +56,10 @@ export interface HostCommunicationHOC {
    * Callback to be called when the Streamlit app clear a cache.
    */
   onCacheClear: () => void
+  /**
+   * Callback to be called when the Streamlit app sends a heartbeat.
+   */
+  onSendAppHeartbeat: () => void
 
   /**
    * Callback to be called when the Streamlit app's page is changed.
@@ -124,6 +128,7 @@ function withHostCommunication<P extends InjectedProps>(
     const [scriptStopRequested, setScriptStopRequested] = useState(false)
     const [scriptRerunRequested, setScriptRerunRequested] = useState(false)
     const [cacheClearRequested, setCacheClearRequested] = useState(false)
+    const [appHeartbeatRequested, setAppHeartbeatRequested] = useState(false)
     const [hideSidebarNav, setHideSidebarNav] = useState(false)
     const [isOwner, setIsOwner] = useState(false)
     const [menuItems, setMenuItems] = useState<IMenuItem[]>([])
@@ -188,6 +193,9 @@ function withHostCommunication<P extends InjectedProps>(
         }
         if (message.type === "CLEAR_CACHE") {
           setCacheClearRequested(true)
+        }
+        if (message.type === "SEND_APP_HEARTBEAT") {
+          setAppHeartbeatRequested(true)
         }
 
         if (message.type === "REQUEST_PAGE_CHANGE") {
@@ -267,6 +275,7 @@ function withHostCommunication<P extends InjectedProps>(
               scriptRerunRequested,
               scriptStopRequested,
               cacheClearRequested,
+              appHeartbeatRequested,
               hideSidebarNav,
               isOwner,
               menuItems,
@@ -291,6 +300,9 @@ function withHostCommunication<P extends InjectedProps>(
             },
             onCacheClear: () => {
               setCacheClearRequested(false)
+            },
+            onSendAppHeartbeat: () => {
+              setAppHeartbeatRequested(false)
             },
             onPageChanged: () => {
               setRequestedPageScriptHash(null)

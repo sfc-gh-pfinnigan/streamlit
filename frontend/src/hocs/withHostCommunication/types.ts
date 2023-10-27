@@ -35,6 +35,7 @@ export interface HostCommunicationState {
   scriptRerunRequested: boolean
   scriptStopRequested: boolean
   cacheClearRequested: boolean
+  appHeartbeatRequested: boolean
   hideSidebarNav: boolean
   isOwner: boolean
   menuItems: IMenuItem[]
@@ -120,6 +121,9 @@ export type IHostToGuestMessage = {
     }
   | {
       type: "CLEAR_CACHE"
+    }
+  | {
+      type: "SEND_APP_HEARTBEAT"
     }
   | {
       type: "SET_CUSTOM_THEME_CONFIG"

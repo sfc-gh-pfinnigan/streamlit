@@ -62,6 +62,8 @@ message BackMsg {
     // runtime. This message is IGNORED unless the runtime is configured with
     // global.developmentMode = True.
     bool debug_shutdown_runtime = 15;
+
+    bool app_heartbeat = 17;
   }
 
   // An ID used to associate this BackMsg with the corresponding ForwardMsgs

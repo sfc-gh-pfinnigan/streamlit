@@ -74,6 +74,7 @@ const getHostCommunicationState = (
   scriptRerunRequested: false,
   scriptStopRequested: false,
   cacheClearRequested: false,
+  appHeartbeatRequested: false,
   hideSidebarNav: false,
   isOwner: true,
   menuItems: [],
@@ -97,6 +98,7 @@ const getHostCommunicationProp = (
   onScriptStop: jest.fn(),
   onScriptRerun: jest.fn(),
   onCacheClear: jest.fn(),
+  onSendAppHeartbeat: jest.fn(),
   setAllowedOriginsResp: jest.fn(),
   ...extend,
 })
@@ -365,6 +367,26 @@ describe("App", () => {
       })
     )
     expect(instance.props.hostCommunication.onCacheClear).toHaveBeenCalled()
+  })
+
+  it("fires withHostCommunication callback when appHeartbeatRequested signal has been received", () => {
+    const wrapper = shallow(<App {...getProps()} />)
+    const instance = wrapper.instance() as App
+
+    instance.isServerConnected = jest.fn().mockReturnValue(true)
+
+    wrapper.setProps(
+      getProps({
+        hostCommunication: getHostCommunicationProp({
+          currentState: getHostCommunicationState({
+            appHeartbeatRequested: true,
+          }),
+        }),
+      })
+    )
+    expect(
+      instance.props.hostCommunication.onSendAppHeartbeat
+    ).toHaveBeenCalled()
   })
 
   it("does not prevent a modal from opening when closure message is set", () => {
