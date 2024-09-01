@@ -20,7 +20,7 @@ import { fireEvent, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Block as BlockProto } from "@streamlit/lib/src/proto"
+import { Block as BlockProto } from "@streamlit/proto"
 
 import Popover, { PopoverProps } from "./Popover"
 

@@ -20,7 +20,7 @@ import { fireEvent, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Block as BlockProto } from "@streamlit/lib/src/proto"
+import { Block as BlockProto } from "@streamlit/proto"
 
 import Dialog, { Props as DialogProps } from "./Dialog"
 

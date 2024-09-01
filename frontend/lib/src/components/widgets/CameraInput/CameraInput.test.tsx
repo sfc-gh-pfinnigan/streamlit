@@ -26,7 +26,7 @@ import {
   CameraInput as CameraInputProto,
   FileURLs as FileURLsProto,
   LabelVisibilityMessage as LabelVisibilityMessageProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 
 import CameraInput, { Props } from "./CameraInput"
 

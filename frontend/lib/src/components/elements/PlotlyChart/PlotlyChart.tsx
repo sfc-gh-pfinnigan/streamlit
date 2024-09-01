@@ -26,7 +26,7 @@ import { useTheme } from "@emotion/react"
 import Plot, { Figure as PlotlyFigureType } from "react-plotly.js"
 
 import { EmotionTheme } from "@streamlit/lib/src/theme"
-import { PlotlyChart as PlotlyChartProto } from "@streamlit/lib/src/proto"
+import { PlotlyChart as PlotlyChartProto } from "@streamlit/proto"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import {

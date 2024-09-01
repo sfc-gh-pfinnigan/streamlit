@@ -23,11 +23,7 @@ import {
   isNullOrUndefined,
   notNullOrUndefined,
 } from "@streamlit/lib/src/util/utils"
-import {
-  BackMsg,
-  ForwardMsg,
-  IBackMsg,
-} from "@streamlit/proto"
+import { BackMsg, ForwardMsg, IBackMsg } from "@streamlit/proto"
 import {
   BaseUriParts,
   buildHttpUri,

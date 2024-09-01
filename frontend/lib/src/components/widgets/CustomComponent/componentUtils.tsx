@@ -21,7 +21,7 @@ import {
   ComponentInstance as ComponentInstanceProto,
   ISpecialArg,
   SpecialArg as SpecialArgProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { EmotionTheme, toExportedTheme } from "@streamlit/lib/src/theme"
 import {
   Source,

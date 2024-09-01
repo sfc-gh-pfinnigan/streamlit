@@ -16,7 +16,7 @@
 
 import React, { ReactElement, useEffect, useMemo, useRef } from "react"
 
-import { Video as VideoProto } from "@streamlit/lib/src/proto"
+import { Video as VideoProto } from "@streamlit/proto"
 import { StreamlitEndpoints } from "@streamlit/lib/src/StreamlitEndpoints"
 import { IS_DEV_ENV } from "@streamlit/lib/src/baseconsts"
 import { WidgetStateManager as ElementStateManager } from "@streamlit/lib/src/WidgetStateManager"

@@ -15,10 +15,7 @@
  */
 import { ReactNode } from "react"
 
-import {
-  BackMsg,
-  ForwardMsg,
-} from "@streamlit/proto"
+import { BackMsg, ForwardMsg } from "@streamlit/proto"
 import {
   BaseUriParts,
   ensureError,

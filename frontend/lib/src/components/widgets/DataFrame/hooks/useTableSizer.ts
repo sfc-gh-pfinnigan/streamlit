@@ -21,7 +21,7 @@ import React from "react"
 
 import { Size as ResizableSize } from "re-resizable"
 
-import { Arrow as ArrowProto } from "@streamlit/lib/src/proto"
+import { Arrow as ArrowProto } from "@streamlit/proto"
 import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
 
 // Min column width used for manual and automatic resizing

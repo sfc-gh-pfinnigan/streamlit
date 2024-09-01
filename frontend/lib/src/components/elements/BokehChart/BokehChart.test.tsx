@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { BokehChart as BokehChartProto } from "@streamlit/lib/src/proto"
+import { BokehChart as BokehChartProto } from "@streamlit/proto"
 import Bokeh from "@streamlit/lib/src/vendor/bokeh/bokeh.esm"
 
 import { BokehChartProps } from "./BokehChart"

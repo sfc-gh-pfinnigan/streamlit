@@ -16,7 +16,7 @@
 
 import React, { ReactElement, useEffect } from "react"
 
-import { Button as ButtonProto } from "@streamlit/lib/src/proto"
+import { Button as ButtonProto } from "@streamlit/proto"
 import BaseButton, {
   BaseButtonKind,
   BaseButtonSize,

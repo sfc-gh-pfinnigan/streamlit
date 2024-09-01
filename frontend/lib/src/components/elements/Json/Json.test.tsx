@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Json as JsonProto } from "@streamlit/lib/src/proto"
+import { Json as JsonProto } from "@streamlit/proto"
 import * as themeUtils from "@streamlit/lib/src/theme/utils"
 
 import Json, { JsonProps } from "./Json"

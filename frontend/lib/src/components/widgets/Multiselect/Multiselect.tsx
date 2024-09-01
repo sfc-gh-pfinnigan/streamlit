@@ -32,7 +32,7 @@ import {
   Source,
   WidgetStateManager,
 } from "@streamlit/lib/src/WidgetStateManager"
-import { MultiSelect as MultiSelectProto } from "@streamlit/lib/src/proto"
+import { MultiSelect as MultiSelectProto } from "@streamlit/proto"
 import {
   StyledWidgetLabelHelp,
   WidgetLabel,

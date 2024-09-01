@@ -21,7 +21,7 @@ import { render, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 import ThemedApp from "./ThemedApp"
 
-jest.mock("@streamlit/app/src/connection/ConnectionManager")
+jest.mock("@streamlit/connection/src/ConnectionManager")
 
 // Mock needed for Block.tsx
 class ResizeObserver {

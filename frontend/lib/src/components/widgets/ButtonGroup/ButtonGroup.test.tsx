@@ -22,7 +22,7 @@ import { act, fireEvent, screen, within } from "@testing-library/react"
 import "@testing-library/jest-dom"
 import { render } from "@streamlit/lib/src/test_util"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
-import { ButtonGroup as ButtonGroupProto } from "@streamlit/lib/src/proto"
+import { ButtonGroup as ButtonGroupProto } from "@streamlit/proto"
 
 import ButtonGroup, { Props } from "./ButtonGroup"
 

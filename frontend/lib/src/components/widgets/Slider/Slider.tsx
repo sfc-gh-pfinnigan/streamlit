@@ -27,7 +27,7 @@ import {
   Source,
   WidgetStateManager,
 } from "@streamlit/lib/src/WidgetStateManager"
-import { Slider as SliderProto } from "@streamlit/lib/src/proto"
+import { Slider as SliderProto } from "@streamlit/proto"
 import {
   debounce,
   labelVisibilityProtoValueToEnum,

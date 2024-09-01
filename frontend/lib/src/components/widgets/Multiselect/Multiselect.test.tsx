@@ -24,7 +24,7 @@ import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import {
   LabelVisibilityMessage as LabelVisibilityMessageProto,
   MultiSelect as MultiSelectProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 
 import Multiselect, { Props } from "./Multiselect"

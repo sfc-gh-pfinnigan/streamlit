@@ -17,7 +17,7 @@
 import { renderHook } from "@testing-library/react-hooks"
 
 import { Quiver } from "@streamlit/lib/src/dataframes/Quiver"
-import { Arrow as ArrowProto } from "@streamlit/lib/src/proto"
+import { Arrow as ArrowProto } from "@streamlit/proto"
 import { UNICODE } from "@streamlit/lib/src/mocks/arrow"
 import {
   BaseColumn,

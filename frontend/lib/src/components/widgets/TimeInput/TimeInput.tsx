@@ -21,7 +21,7 @@ import { StyledClearIcon } from "baseui/input/styled-components"
 import { ChevronDown } from "baseui/icon"
 import { withTheme } from "@emotion/react"
 
-import { TimeInput as TimeInputProto } from "@streamlit/lib/src/proto"
+import { TimeInput as TimeInputProto } from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   Source,

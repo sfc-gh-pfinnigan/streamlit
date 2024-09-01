@@ -39,7 +39,7 @@ import {
   isNullOrUndefined,
   notNullOrUndefined,
 } from "@streamlit/lib/src/util/utils"
-import { ConnectionState } from "@streamlit/app/src/connection/ConnectionState"
+import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 import { SessionEventDispatcher } from "@streamlit/app/src/SessionEventDispatcher"
 /*
  * IMPORTANT: If you change the asset import below, make sure it still works if Streamlit is served

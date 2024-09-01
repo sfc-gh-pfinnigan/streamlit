@@ -16,7 +16,7 @@
 
 import React, { Fragment, ReactElement } from "react"
 
-import { Heading as HeadingProto } from "@streamlit/lib/src/proto"
+import { Heading as HeadingProto } from "@streamlit/proto"
 import IsSidebarContext from "@streamlit/lib/src/components/core/IsSidebarContext"
 
 import { StyledDivider, StyledStreamlitMarkdown } from "./styled-components"

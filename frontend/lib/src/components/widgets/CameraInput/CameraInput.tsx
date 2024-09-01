@@ -26,7 +26,7 @@ import {
   FileURLs as FileURLsProto,
   IFileURLs,
   UploadedFileInfo as UploadedFileInfoProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import Icon from "@streamlit/lib/src/components/shared/Icon"
 import { Placement } from "@streamlit/lib/src/components/shared/Tooltip"
 import TooltipIcon from "@streamlit/lib/src/components/shared/TooltipIcon"

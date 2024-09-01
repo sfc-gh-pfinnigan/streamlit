@@ -20,7 +20,7 @@ import { useTheme } from "@emotion/react"
 
 import { EmotionTheme } from "@streamlit/lib/src/theme"
 import { Quiver } from "@streamlit/lib/src/dataframes/Quiver"
-import { Arrow as ArrowProto } from "@streamlit/lib/src/proto"
+import { Arrow as ArrowProto } from "@streamlit/proto"
 import {
   isNullOrUndefined,
   notNullOrUndefined,

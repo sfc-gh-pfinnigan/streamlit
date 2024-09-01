@@ -24,7 +24,7 @@ import { render } from "@streamlit/lib/src/test_util"
 import {
   Checkbox as CheckboxProto,
   LabelVisibilityMessage as LabelVisibilityMessageProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 
 import Checkbox, { OwnProps } from "./Checkbox"
 

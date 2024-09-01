@@ -41,7 +41,7 @@ import {
   isNullOrUndefined,
   notNullOrUndefined,
 } from "@streamlit/lib/src/util/utils"
-import { IArrow, Styler as StylerProto } from "@streamlit/lib/src/proto"
+import { IArrow, Styler as StylerProto } from "@streamlit/proto"
 import { logWarning } from "@streamlit/lib/src/util/log"
 
 /** Data types used by ArrowJS. */

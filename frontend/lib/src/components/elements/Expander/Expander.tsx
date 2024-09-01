@@ -18,7 +18,7 @@ import React, { ReactElement, useEffect, useRef, useState } from "react"
 
 import { ExpandLess, ExpandMore } from "@emotion-icons/material-outlined"
 
-import { Block as BlockProto } from "@streamlit/lib/src/proto"
+import { Block as BlockProto } from "@streamlit/proto"
 import {
   DynamicIcon,
   StyledIcon,

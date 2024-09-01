@@ -20,7 +20,7 @@ import { useTheme } from "@emotion/react"
 
 import { DynamicIcon } from "@streamlit/lib/src/components/shared/Icon"
 import { Placement } from "@streamlit/lib/src/components/shared/Tooltip"
-import { PageLink as PageLinkProto } from "@streamlit/lib/src/proto"
+import { PageLink as PageLinkProto } from "@streamlit/proto"
 import { BaseButtonTooltip } from "@streamlit/lib/src/components/shared/BaseButton"
 import StreamlitMarkdown from "@streamlit/lib/src/components/shared/StreamlitMarkdown"
 import { EmotionTheme } from "@streamlit/lib/src/theme"

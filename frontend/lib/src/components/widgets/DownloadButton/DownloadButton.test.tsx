@@ -21,7 +21,7 @@ import { fireEvent, screen } from "@testing-library/react"
 import "@testing-library/jest-dom"
 import { render } from "@streamlit/lib/src/test_util"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
-import { DownloadButton as DownloadButtonProto } from "@streamlit/lib/src/proto"
+import { DownloadButton as DownloadButtonProto } from "@streamlit/proto"
 import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
 
 import DownloadButton, { createDownloadLink, Props } from "./DownloadButton"

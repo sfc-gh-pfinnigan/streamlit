@@ -20,9 +20,7 @@ import axios from "axios"
 import { WS } from "jest-websocket-mock"
 import zip from "lodash/zip"
 
-import {
-  BackMsg,
-} from "@streamlit/proto"
+import { BackMsg } from "@streamlit/proto"
 import {
   mockEndpoints,
   mockSessionInfoProps,

@@ -21,7 +21,7 @@ import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 import {
   ArrowDataframe,
   ComponentInstance as ComponentInstanceProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 
 import {

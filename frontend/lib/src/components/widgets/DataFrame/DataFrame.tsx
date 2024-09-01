@@ -37,7 +37,7 @@ import {
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
 import { Quiver } from "@streamlit/lib/src/dataframes/Quiver"
-import { Arrow as ArrowProto } from "@streamlit/lib/src/proto"
+import { Arrow as ArrowProto } from "@streamlit/proto"
 import {
   WidgetInfo,
   WidgetStateManager,

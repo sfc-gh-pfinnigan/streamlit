@@ -43,7 +43,7 @@ import {
   hasLightBackgroundColor,
 } from "@streamlit/lib/src/theme"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
-import { DeckGlJsonChart as DeckGlJsonChartProto } from "@streamlit/lib/src/proto"
+import { DeckGlJsonChart as DeckGlJsonChartProto } from "@streamlit/proto"
 
 import withMapboxToken from "./withMapboxToken"
 import {

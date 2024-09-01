@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Html as HtmlProto } from "@streamlit/lib/src/proto"
+import { Html as HtmlProto } from "@streamlit/proto"
 
 import Html, { HtmlProps } from "./Html"
 

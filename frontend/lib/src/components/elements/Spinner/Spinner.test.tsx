@@ -21,7 +21,7 @@ import { screen } from "@testing-library/react"
 
 import "@testing-library/jest-dom"
 
-import { Spinner as SpinnerProto } from "@streamlit/lib/src/proto"
+import { Spinner as SpinnerProto } from "@streamlit/proto"
 import { render } from "@streamlit/lib/src/test_util"
 
 import Spinner, { SpinnerProps } from "./Spinner"

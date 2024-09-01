@@ -33,7 +33,7 @@ import BaseButton, {
 } from "@streamlit/lib/src/components/shared/BaseButton"
 import { DynamicIcon } from "@streamlit/lib/src/components/shared/Icon"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
-import { ButtonGroup as ButtonGroupProto } from "@streamlit/lib/src/proto"
+import { ButtonGroup as ButtonGroupProto } from "@streamlit/proto"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form/FormClearHelper"
 

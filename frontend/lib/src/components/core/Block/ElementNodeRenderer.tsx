@@ -62,7 +62,7 @@ import {
   TimeInput as TimeInputProto,
   Toast as ToastProto,
   Video as VideoProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { ElementNode } from "@streamlit/lib/src/AppNode"
 import { Quiver } from "@streamlit/lib/src/dataframes/Quiver"
 // Load (non-lazy) elements.

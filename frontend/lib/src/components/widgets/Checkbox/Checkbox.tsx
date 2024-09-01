@@ -25,7 +25,7 @@ import {
 import { transparentize } from "color2k"
 
 import { labelVisibilityProtoValueToEnum } from "@streamlit/lib/src/util/utils"
-import { Checkbox as CheckboxProto } from "@streamlit/lib/src/proto"
+import { Checkbox as CheckboxProto } from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   Source,

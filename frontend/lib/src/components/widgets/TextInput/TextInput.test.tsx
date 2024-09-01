@@ -25,7 +25,7 @@ import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import {
   LabelVisibilityMessage as LabelVisibilityMessageProto,
   TextInput as TextInputProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 
 import TextInput, { Props } from "./TextInput"

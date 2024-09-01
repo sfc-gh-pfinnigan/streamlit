@@ -28,7 +28,7 @@ import {
   ComponentInstance as ComponentInstanceProto,
   ISpecialArg,
   Skeleton as SkeletonProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
 import {
   DEFAULT_IFRAME_FEATURE_POLICY,

@@ -19,7 +19,7 @@ import {
   DataFrameCell,
   Quiver,
 } from "@streamlit/lib/src/dataframes/Quiver"
-import { Arrow as ArrowProto } from "@streamlit/lib/src/proto"
+import { Arrow as ArrowProto } from "@streamlit/proto"
 import {
   CATEGORICAL_COLUMN,
   DECIMAL,

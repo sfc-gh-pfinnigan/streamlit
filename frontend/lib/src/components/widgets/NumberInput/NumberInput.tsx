@@ -30,7 +30,7 @@ import {
 } from "@streamlit/lib/src/util/utils"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import { logWarning } from "@streamlit/lib/src/util/log"
-import { NumberInput as NumberInputProto } from "@streamlit/lib/src/proto"
+import { NumberInput as NumberInputProto } from "@streamlit/proto"
 import {
   Source,
   WidgetStateManager,

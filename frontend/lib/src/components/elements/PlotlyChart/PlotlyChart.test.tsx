@@ -15,7 +15,7 @@
  */
 import "@testing-library/jest-dom"
 
-import { PlotlyChart as PlotlyChartProto } from "@streamlit/lib/src/proto"
+import { PlotlyChart as PlotlyChartProto } from "@streamlit/proto"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 

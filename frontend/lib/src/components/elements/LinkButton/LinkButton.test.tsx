@@ -20,7 +20,7 @@ import { screen } from "@testing-library/react"
 
 import "@testing-library/jest-dom"
 import { render } from "@streamlit/lib/src/test_util"
-import { LinkButton as LinkButtonProto } from "@streamlit/lib/src/proto"
+import { LinkButton as LinkButtonProto } from "@streamlit/proto"
 
 import LinkButton, { Props } from "./LinkButton"
 

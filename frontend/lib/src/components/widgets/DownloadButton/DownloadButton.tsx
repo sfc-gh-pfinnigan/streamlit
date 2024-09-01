@@ -16,7 +16,7 @@
 
 import React, { ReactElement } from "react"
 
-import { DownloadButton as DownloadButtonProto } from "@streamlit/lib/src/proto"
+import { DownloadButton as DownloadButtonProto } from "@streamlit/proto"
 import BaseButton, {
   BaseButtonKind,
   BaseButtonSize,

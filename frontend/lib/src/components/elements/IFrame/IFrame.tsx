@@ -19,7 +19,7 @@ import {
   isNullOrUndefined,
   notNullOrUndefined,
 } from "@streamlit/lib/src/util/utils"
-import { IFrame as IFrameProto } from "@streamlit/lib/src/proto"
+import { IFrame as IFrameProto } from "@streamlit/proto"
 import {
   DEFAULT_IFRAME_FEATURE_POLICY,
   DEFAULT_IFRAME_SANDBOX_POLICY,

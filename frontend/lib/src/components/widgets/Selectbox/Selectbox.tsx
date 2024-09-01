@@ -18,7 +18,7 @@ import React from "react"
 
 import { withTheme } from "@emotion/react"
 
-import { Selectbox as SelectboxProto } from "@streamlit/lib/src/proto"
+import { Selectbox as SelectboxProto } from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   Source,

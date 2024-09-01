@@ -21,7 +21,7 @@ import AlertContainer, {
   Kind,
 } from "@streamlit/lib/src/components/shared/AlertContainer"
 import StreamlitMarkdown from "@streamlit/lib/src/components/shared/StreamlitMarkdown"
-import { Exception as ExceptionProto } from "@streamlit/lib/src/proto"
+import { Exception as ExceptionProto } from "@streamlit/proto"
 
 import {
   StyledMessageType,

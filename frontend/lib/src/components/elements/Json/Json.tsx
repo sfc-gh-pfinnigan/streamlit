@@ -22,7 +22,7 @@ import ReactJson from "react-json-view"
 import { useTheme } from "@emotion/react"
 
 import ErrorElement from "@streamlit/lib/src/components/shared/ErrorElement"
-import { Json as JsonProto } from "@streamlit/lib/src/proto"
+import { Json as JsonProto } from "@streamlit/proto"
 import {
   EmotionTheme,
   hasLightBackgroundColor,

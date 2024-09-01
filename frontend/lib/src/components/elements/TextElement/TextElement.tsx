@@ -16,7 +16,7 @@
 
 import React, { ReactElement } from "react"
 
-import { Text as TextProto } from "@streamlit/lib/src/proto"
+import { Text as TextProto } from "@streamlit/proto"
 import {
   InlineTooltipIcon,
   StyledLabelHelpWrapper,

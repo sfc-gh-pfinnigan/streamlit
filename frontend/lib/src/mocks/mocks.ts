@@ -19,7 +19,7 @@ import {
   Props as SessionInfoProps,
 } from "@streamlit/lib/src/SessionInfo"
 import { StreamlitEndpoints } from "@streamlit/lib/src/StreamlitEndpoints"
-import { IAppPage } from "@streamlit/lib/src/proto"
+import { IAppPage } from "@streamlit/proto"
 
 /** Create mock SessionInfo.props */
 export function mockSessionInfoProps(

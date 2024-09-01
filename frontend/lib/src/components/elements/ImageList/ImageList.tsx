@@ -20,7 +20,7 @@ import {
   IImage,
   ImageList as ImageListProto,
   Image as ImageProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
 import { StreamlitEndpoints } from "@streamlit/lib/src/StreamlitEndpoints"
 

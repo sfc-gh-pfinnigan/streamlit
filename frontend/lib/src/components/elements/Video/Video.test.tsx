@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Video as VideoProto } from "@streamlit/lib/src/proto"
+import { Video as VideoProto } from "@streamlit/proto"
 import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
 import { WidgetStateManager as ElementStateManager } from "@streamlit/lib/src/WidgetStateManager"
 

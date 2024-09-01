@@ -25,7 +25,7 @@ import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import {
   LabelVisibilityMessage as LabelVisibilityMessageProto,
   TimeInput as TimeInputProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 
 import TimeInput, { Props } from "./TimeInput"

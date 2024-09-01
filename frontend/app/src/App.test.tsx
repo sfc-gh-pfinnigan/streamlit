@@ -29,21 +29,23 @@ import cloneDeep from "lodash/cloneDeep"
 
 import {
   Config,
-  CUSTOM_THEME_NAME,
   CustomThemeConfig,
-  FileUploadClient,
   ForwardMsg,
+  INewSession,
+  PagesChanged,
+} from "@streamlit/proto"
+import {
+  CUSTOM_THEME_NAME,
+  FileUploadClient,
   getDefaultTheme,
   getHostSpecifiedTheme,
   HOST_COMM_VERSION,
   HostCommunicationManager,
-  INewSession,
   lightTheme,
   LocalStore,
   mockEndpoints,
   mockSessionInfoProps,
   mockWindowLocation,
-  PagesChanged,
   RootStyleProvider,
   ScriptRunState,
   SessionInfo,
@@ -51,8 +53,8 @@ import {
   WidgetStateManager,
 } from "@streamlit/lib"
 import { SegmentMetricsManager } from "@streamlit/app/src/SegmentMetricsManager"
-import { ConnectionManager } from "@streamlit/app/src/connection/ConnectionManager"
-import { ConnectionState } from "@streamlit/app/src/connection/ConnectionState"
+import { ConnectionManager } from "@streamlit/connection/src/ConnectionManager"
+import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 import {
   getMenuStructure,
   openMenu,
@@ -66,9 +68,9 @@ jest.mock("@streamlit/lib/src/baseconsts", () => {
   }
 })
 
-jest.mock("@streamlit/app/src/connection/ConnectionManager", () => {
+jest.mock("@streamlit/connection/src/ConnectionManager", () => {
   const actualModule = jest.requireActual(
-    "@streamlit/app/src/connection/ConnectionManager"
+    "@streamlit/connection/src/ConnectionManager"
   )
 
   const MockedClass = jest.fn().mockImplementation(props => {
@@ -1990,11 +1992,11 @@ describe("App", () => {
         getStoredValue<FileUploadClient>(FileUploadClient)
 
       // @ts-expect-error - requestFileURLs is private
-      fileUploadClient.requestFileURLs(
-        "myRequestId",
-        // @ts-expect-error
-        [{ name: "file1.txt" }, { name: "file2.txt" }, { name: "file3.txt" }]
-      )
+      fileUploadClient.requestFileURLs("myRequestId", [
+        { name: "file1.txt" },
+        { name: "file2.txt" },
+        { name: "file3.txt" },
+      ] as any)
 
       // It's called twice
       // Once for the initial script run
@@ -2020,11 +2022,11 @@ describe("App", () => {
         getStoredValue<FileUploadClient>(FileUploadClient)
 
       // @ts-expect-error - requestFileURLs is private
-      fileUploadClient.requestFileURLs(
-        "myRequestId",
-        // @ts-expect-error
-        [{ name: "file1.txt" }, { name: "file2.txt" }, { name: "file3.txt" }]
-      )
+      fileUploadClient.requestFileURLs("myRequestId", [
+        { name: "file1.txt" },
+        { name: "file2.txt" },
+        { name: "file3.txt" },
+      ] as any)
 
       const connectionManager = getMockConnectionManager()
 

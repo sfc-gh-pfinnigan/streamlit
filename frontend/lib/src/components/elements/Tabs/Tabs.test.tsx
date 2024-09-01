@@ -21,7 +21,7 @@ import { screen, within } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
 import { BlockNode } from "@streamlit/lib/src/AppNode"
-import { Block as BlockProto } from "@streamlit/lib/src/proto"
+import { Block as BlockProto } from "@streamlit/proto"
 
 import Tabs, { TabProps } from "./Tabs"
 

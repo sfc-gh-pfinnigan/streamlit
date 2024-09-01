@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { fireEvent, screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { ColorPicker as ColorPickerProto } from "@streamlit/lib/src/proto"
+import { ColorPicker as ColorPickerProto } from "@streamlit/proto"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 
 import ColorPicker, { Props } from "./ColorPicker"

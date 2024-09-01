@@ -20,7 +20,7 @@ import JSON5 from "json5"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { DeckGlJsonChart as DeckGlJsonChartProto } from "@streamlit/lib/src/proto"
+import { DeckGlJsonChart as DeckGlJsonChartProto } from "@streamlit/proto"
 import "@testing-library/jest-dom"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 

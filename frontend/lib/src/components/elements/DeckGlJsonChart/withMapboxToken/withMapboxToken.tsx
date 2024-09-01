@@ -20,10 +20,7 @@ import hoistNonReactStatics from "hoist-non-react-statics"
 import axios from "axios"
 
 import { ensureError } from "@streamlit/lib/src/util/ErrorHandling"
-import {
-  DeckGlJsonChart,
-  Skeleton as SkeletonProto,
-} from "@streamlit/lib/src/proto"
+import { DeckGlJsonChart, Skeleton as SkeletonProto } from "@streamlit/proto"
 import { Skeleton } from "@streamlit/lib/src/components/elements/Skeleton"
 import { LibContext } from "@streamlit/lib/src/components/core/LibContext"
 

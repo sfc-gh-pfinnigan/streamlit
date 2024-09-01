@@ -23,7 +23,7 @@ import { render } from "@streamlit/lib/src/test_util"
 import {
   LabelVisibilityMessage as LabelVisibilityMessageProto,
   Metric as MetricProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 
 import Metric, { MetricProps } from "./Metric"
 

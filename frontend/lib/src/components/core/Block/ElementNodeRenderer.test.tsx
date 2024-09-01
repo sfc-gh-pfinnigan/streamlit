@@ -24,7 +24,7 @@ import {
   Balloons as BalloonsProto,
   ForwardMsgMetadata,
   Snow as SnowProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { ElementNode } from "@streamlit/lib/src/AppNode"
 import { ScriptRunState } from "@streamlit/lib/src/ScriptRunState"
 import {

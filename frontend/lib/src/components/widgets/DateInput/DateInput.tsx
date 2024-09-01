@@ -21,7 +21,7 @@ import { withTheme } from "@emotion/react"
 import { DENSITY, Datepicker as UIDatePicker } from "baseui/datepicker"
 import { PLACEMENT } from "baseui/popover"
 
-import { DateInput as DateInputProto } from "@streamlit/lib/src/proto"
+import { DateInput as DateInputProto } from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   Source,

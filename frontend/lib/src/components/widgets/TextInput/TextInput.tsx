@@ -20,7 +20,7 @@ import uniqueId from "lodash/uniqueId"
 import { Input as UIInput } from "baseui/input"
 import { withTheme } from "@emotion/react"
 
-import { TextInput as TextInputProto } from "@streamlit/lib/src/proto"
+import { TextInput as TextInputProto } from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   Source,

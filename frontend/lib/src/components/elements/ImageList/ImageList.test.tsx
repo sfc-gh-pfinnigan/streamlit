@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { ImageList as ImageListProto } from "@streamlit/lib/src/proto"
+import { ImageList as ImageListProto } from "@streamlit/proto"
 import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
 
 import { ImageList, ImageListProps } from "./ImageList"

@@ -31,7 +31,7 @@ import {
   FileURLs as FileURLsProto,
   IFileURLs,
   UploadedFileInfo as UploadedFileInfoProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   FileSize,

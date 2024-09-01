@@ -21,7 +21,7 @@ import { Engine, graphviz } from "d3-graphviz"
 
 import { logError } from "@streamlit/lib/src/util/log"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
-import { GraphVizChart as GraphVizChartProto } from "@streamlit/lib/src/proto"
+import { GraphVizChart as GraphVizChartProto } from "@streamlit/proto"
 
 import { StyledGraphVizChart } from "./styled-components"
 

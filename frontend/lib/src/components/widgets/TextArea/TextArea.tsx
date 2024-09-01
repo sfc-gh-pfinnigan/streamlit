@@ -20,7 +20,7 @@ import { Textarea as UITextArea } from "baseui/textarea"
 import { withTheme } from "@emotion/react"
 import uniqueId from "lodash/uniqueId"
 
-import { TextArea as TextAreaProto } from "@streamlit/lib/src/proto"
+import { TextArea as TextAreaProto } from "@streamlit/proto"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import {
   Source,

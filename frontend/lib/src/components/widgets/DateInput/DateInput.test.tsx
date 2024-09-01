@@ -24,7 +24,7 @@ import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import {
   DateInput as DateInputProto,
   LabelVisibilityMessage as LabelVisibilityMessageProto,
-} from "@streamlit/lib/src/proto"
+} from "@streamlit/proto"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 
 import DateInput, { Props } from "./DateInput"

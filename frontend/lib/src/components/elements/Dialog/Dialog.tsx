@@ -24,7 +24,7 @@ import Modal, {
   ModalBody,
   ModalHeader,
 } from "@streamlit/lib/src/components/shared/Modal"
-import { Block as BlockProto } from "@streamlit/lib/src/proto"
+import { Block as BlockProto } from "@streamlit/proto"
 import IsDialogContext from "@streamlit/lib/src/components/core/IsDialogContext"
 import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
 

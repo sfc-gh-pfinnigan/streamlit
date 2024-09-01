@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { CustomThemeConfig } from "@streamlit/lib/src/proto"
+import { CustomThemeConfig } from "@streamlit/proto"
 import { LocalStore } from "@streamlit/lib/src/util/storageUtils"
 import {
   baseTheme,

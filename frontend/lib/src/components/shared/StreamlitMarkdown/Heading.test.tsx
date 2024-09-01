@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Heading as HeadingProto } from "@streamlit/lib/src/proto"
+import { Heading as HeadingProto } from "@streamlit/proto"
 import IsDialogContext from "@streamlit/lib/src/components/core/IsDialogContext"
 import IsSidebarContext from "@streamlit/lib/src/components/core/IsSidebarContext"
 

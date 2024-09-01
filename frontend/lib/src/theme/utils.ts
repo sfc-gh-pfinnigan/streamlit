@@ -22,10 +22,7 @@ import isObject from "lodash/isObject"
 import merge from "lodash/merge"
 import once from "lodash/once"
 
-import {
-  CustomThemeConfig,
-  ICustomThemeConfig,
-} from "@streamlit/lib/src/proto"
+import { CustomThemeConfig, ICustomThemeConfig } from "@streamlit/proto"
 import {
   baseTheme,
   CachedTheme,

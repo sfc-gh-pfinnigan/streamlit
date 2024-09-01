@@ -16,7 +16,7 @@
 
 import React, { ReactElement } from "react"
 
-import { Alert as AlertProto } from "@streamlit/lib/src/proto"
+import { Alert as AlertProto } from "@streamlit/proto"
 import StreamlitMarkdown from "@streamlit/lib/src/components/shared/StreamlitMarkdown"
 import { DynamicIcon } from "@streamlit/lib/src/components/shared/Icon"
 import AlertContainer, {

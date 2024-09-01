@@ -27,7 +27,7 @@ import "@testing-library/jest-dom"
 import { PLACEMENT, ToasterContainer } from "baseui/toast"
 
 import { render } from "@streamlit/lib/src/test_util"
-import { Toast as ToastProto } from "@streamlit/lib/src/proto"
+import { Toast as ToastProto } from "@streamlit/proto"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 
