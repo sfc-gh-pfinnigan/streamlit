@@ -72,7 +72,6 @@ export {
 } from "./mocks/mocks"
 export { mockTheme } from "./mocks/mockTheme"
 export { PerformanceEvents } from "./profiler/PerformanceEvents"
-export * from "./proto"
 export { RootStyleProvider } from "./RootStyleProvider"
 export { ScriptRunState } from "./ScriptRunState"
 export { SessionInfo } from "./SessionInfo"

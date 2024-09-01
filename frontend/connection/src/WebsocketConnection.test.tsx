@@ -22,18 +22,20 @@ import zip from "lodash/zip"
 
 import {
   BackMsg,
+} from "@streamlit/proto"
+import {
   mockEndpoints,
   mockSessionInfoProps,
   SessionInfo,
 } from "@streamlit/lib"
-import { ConnectionState } from "@streamlit/app/src/connection/ConnectionState"
+import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 import {
   Args,
   CORS_ERROR_MESSAGE_DOCUMENTATION_LINK,
   doInitPings,
   StyledBashCode,
   WebsocketConnection,
-} from "@streamlit/app/src/connection/WebsocketConnection"
+} from "@streamlit/connection/src/WebsocketConnection"
 
 const MOCK_ALLOWED_ORIGINS_CONFIG = {
   allowedOrigins: ["list", "of", "allowed", "origins"],

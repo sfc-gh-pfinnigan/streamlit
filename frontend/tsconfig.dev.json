@@ -3,6 +3,8 @@
     "compilerOptions": {
       "paths": {
         "@streamlit/lib": ["lib/src"],
+        "@streamlit/connection": ["connection/src"],
+        "@streamlit/proto": ["proto/src"],
         "@streamlit/app": ["app/src"]
       }
     }

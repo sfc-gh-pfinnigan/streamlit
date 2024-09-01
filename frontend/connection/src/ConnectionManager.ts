@@ -17,9 +17,11 @@ import { ReactNode } from "react"
 
 import {
   BackMsg,
+  ForwardMsg,
+} from "@streamlit/proto"
+import {
   BaseUriParts,
   ensureError,
-  ForwardMsg,
   getPossibleBaseUris,
   IHostConfigResponse,
   logError,

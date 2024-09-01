@@ -25,12 +25,14 @@ import {
 } from "@streamlit/lib/src/util/utils"
 import {
   BackMsg,
+  ForwardMsg,
+  IBackMsg,
+} from "@streamlit/proto"
+import {
   BaseUriParts,
   buildHttpUri,
   buildWsUri,
-  ForwardMsg,
   ForwardMsgCache,
-  IBackMsg,
   IHostConfigResponse,
   logError,
   logMessage,
@@ -40,7 +42,7 @@ import {
   SessionInfo,
   StreamlitEndpoints,
 } from "@streamlit/lib"
-import { ConnectionState } from "@streamlit/app/src/connection/ConnectionState"
+import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 
 /**
  * Name of the logger.

@@ -18,6 +18,13 @@
     "strict": true,
     "target": "es5"
   },
-  "include": ["lib", "app"],
+  "references": [
+    { "path": "./app" },
+    { "path": "./connection" },
+    { "path": "./lib" },
+    { "path": "./proto" }
+  ],
+  "files": [],
+  "include": [],
   "exclude": ["*/proto.js", "*/proto.d.ts"]
 }

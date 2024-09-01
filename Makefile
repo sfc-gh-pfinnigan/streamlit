@@ -222,8 +222,8 @@ clean:
 	rm -rf frontend/app/node_modules
 	rm -rf frontend/lib/node_modules
 	rm -rf frontend/test_results
-	rm -f frontend/lib/src/proto.js
-	rm -f frontend/lib/src/proto.d.ts
+	rm -f frontend/proto/src/proto.js
+	rm -f frontend/proto/src/proto.d.ts
 	rm -rf frontend/public/reports
 	rm -rf frontend/lib/dist
 	rm -rf ~/.cache/pre-commit
@@ -265,14 +265,14 @@ protobuf: check-protoc
 		yarn --silent pbjs \
 			../proto/streamlit/proto/*.proto \
 			--path=proto -t static-module --wrap es6 \
-	) > ./lib/src/proto.js
+	) > ./proto/src/proto.js
 
 	@# Typescript type declarations for our generated protobufs
 	cd frontend/ ; ( \
 		echo "/* eslint-disable */" ; \
 		echo ; \
-		yarn --silent pbts ./lib/src/proto.js \
-	) > ./lib/src/proto.d.ts
+		yarn --silent pbts ./proto/src/proto.js \
+	) > ./proto/src/proto.d.ts
 
 .PHONY: react-init
 # React init.

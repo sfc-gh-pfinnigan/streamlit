@@ -1,4 +1,9 @@
 {
   "extends": "../tsconfig.dev.json",
-  "include": ["src/*", "../lib/src/declarations.d.ts"]
+  "include": ["src/*", "../lib/src/declarations.d.ts"],
+  "references": [
+    { "path": "../connection" },
+    { "path": "../lib" },
+    { "path": "../proto" }
+  ]
 }

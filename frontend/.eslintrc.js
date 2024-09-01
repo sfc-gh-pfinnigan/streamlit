@@ -57,8 +57,8 @@ module.exports = {
   },
   // Ignore our auto-generated and vendored code
   ignorePatterns: [
-    "lib/src/proto.js",
-    "lib/src/proto.d.ts",
+    "proto/src/proto.js",
+    "proto/src/proto.d.ts",
     "**/vendor/*",
     "**/node_modules/*",
   ],
