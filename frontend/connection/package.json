@@ -9,8 +9,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "yarn build:src",
+    "build": "yarn build:src && yarn build:dev",
     "build:src": "env NODE_ENV=development ./node_modules/.bin/babel --root-mode=upward --out-dir dist --source-maps --extensions \".js,.mjs,.jsx,.ts,.tsx\" src",
+    "build:dev": "tsc -p ./tsconfig.json && tsc-alias -p ./tsconfig.json",
     "typecheck": "tsc",
     "test": "env NODE_OPTIONS=--max_old_space_size=8192 jest --env=../jest/jsdom-polyfill-env.js --runTestsByPath ${TESTPATH}",
     "testWatch": "env NODE_OPTIONS=--max_old_space_size=8192 jest --watchAll --env=../jest/jsdom-polyfill-env.js --runTestsByPath ${TESTPATH}",

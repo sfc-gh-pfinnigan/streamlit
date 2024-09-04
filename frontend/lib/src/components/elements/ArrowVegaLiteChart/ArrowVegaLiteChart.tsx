@@ -23,9 +23,7 @@ import { SignalValue } from "vega"
 import { expressionInterpreter } from "vega-interpreter"
 import isEqual from "lodash/isEqual"
 
-import {
-  debounce,
-} from "@streamlit/lib/src/util/utils"
+import { debounce } from "@streamlit/lib/src/util/utils"
 import {
   WidgetInfo,
   WidgetStateManager,

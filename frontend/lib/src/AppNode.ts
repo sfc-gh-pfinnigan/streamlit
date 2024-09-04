@@ -16,11 +16,7 @@
 
 import { produce } from "immer"
 
-import {
-  isNullOrUndefined,
-  notUndefined,
-  ensureError,
-} from "@streamlit/utils"
+import { isNullOrUndefined, notUndefined, ensureError } from "@streamlit/utils"
 import {
   getLoadingScreenType,
   LoadingScreenType,

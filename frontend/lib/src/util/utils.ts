@@ -24,10 +24,7 @@ import {
   LabelVisibilityMessage as LabelVisibilityMessageProto,
   Skeleton as SkeletonProto,
 } from "@streamlit/proto"
-import { 
-  notNullOrUndefined,
-  requireNonNull,
-} from "@streamlit/utils"
+import { notNullOrUndefined, requireNonNull } from "@streamlit/utils"
 
 // This prefix should be in sync with the value on the python side:
 const GENERATED_ELEMENT_ID_PREFIX = "$$ID"

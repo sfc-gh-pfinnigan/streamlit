@@ -16,22 +16,14 @@
 
 import pick from "lodash/pick"
 
-import {
-  Delta,
-  Element,
-} from "@streamlit/proto"
+import { Delta, Element } from "@streamlit/proto"
 import {
   IS_DEV_ENV,
   isNullOrUndefined,
   notNullOrUndefined,
 } from "@streamlit/utils"
-import {
-  SessionInfo
-} from "@streamlit/connection"
-import {
-  DeployedAppMetadata,
-  logAlways,
-} from "@streamlit/lib"
+import { SessionInfo } from "@streamlit/connection"
+import { DeployedAppMetadata, logAlways } from "@streamlit/lib"
 import { initializeSegment } from "@streamlit/app/src/vendor/Segment"
 
 /**

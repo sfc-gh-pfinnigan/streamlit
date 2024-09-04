@@ -14,10 +14,7 @@
  * limitations under the License.
  */
 
-import {
-  notNullOrUndefined,
-  logWarning,
-} from "@streamlit/utils"
+import { notNullOrUndefined, logWarning } from "@streamlit/utils"
 
 const BLOB_TYPE = "video/webm"
 

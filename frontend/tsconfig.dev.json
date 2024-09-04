@@ -1,12 +1,17 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-      "paths": {
-        "@streamlit/lib": ["lib/src"],
-        "@streamlit/connection": ["connection/src"],
-        "@streamlit/proto": ["proto/src"],
-        "@streamlit/app": ["app/src"],
-        "@streamlit/utils": ["utils/src"],
-      }
-    }
-  }
+  "compilerOptions": {
+    "composite": true,
+    "checkJs": false,
+    "baseUrl": ".",
+    "noEmit": false,
+    "esModuleInterop": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": "src",
+  },
+  "include": ["src"],
+  "exclude": ["node_modules/**/*"],
+  "references": [],
+}

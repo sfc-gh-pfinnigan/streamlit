@@ -71,9 +71,7 @@ jest.mock("@streamlit/lib/src/baseconsts", () => {
 })
 
 jest.mock("@streamlit/connection", () => {
-  const actualModule = jest.requireActual(
-    "@streamlit/connection"
-  )
+  const actualModule = jest.requireActual("@streamlit/connection")
 
   const MockedClass = jest.fn().mockImplementation(props => {
     return {

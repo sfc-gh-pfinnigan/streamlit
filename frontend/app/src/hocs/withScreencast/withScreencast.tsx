@@ -18,10 +18,7 @@ import React, { ComponentType, PureComponent, ReactNode } from "react"
 
 import hoistNonReactStatics from "hoist-non-react-statics"
 
-import {
-  isNullOrUndefined,
-  logWarning,
-} from "@streamlit/utils"
+import { isNullOrUndefined, logWarning } from "@streamlit/utils"
 import ScreenCastRecorder from "@streamlit/app/src/util/ScreenCastRecorder"
 import {
   ScreencastDialog,

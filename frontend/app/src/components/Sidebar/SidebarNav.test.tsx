@@ -21,11 +21,7 @@ import * as reactDeviceDetect from "react-device-detect"
 import { fireEvent, screen } from "@testing-library/react"
 
 import { IAppPage } from "@streamlit/proto"
-import {
-  mockEndpoints,
-  render,
-  useIsOverflowing,
-} from "@streamlit/lib"
+import { mockEndpoints, render, useIsOverflowing } from "@streamlit/lib"
 
 import SidebarNav, { Props } from "./SidebarNav"
 

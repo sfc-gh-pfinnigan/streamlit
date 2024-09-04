@@ -22,10 +22,7 @@ import {
   mockSessionInfoProps,
   SessionInfo,
 } from "@streamlit/connection"
-import {
-  Delta,
-  Element,
-} from "@streamlit/lib"
+import { Delta, Element } from "@streamlit/lib"
 import { SegmentMetricsManager } from "./SegmentMetricsManager"
 
 const getSegmentMetricsManager = (

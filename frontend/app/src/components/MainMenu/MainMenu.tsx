@@ -21,10 +21,7 @@ import { PLACEMENT, StatefulPopover } from "baseui/popover"
 import { MoreVert } from "@emotion-icons/material-rounded"
 import { useTheme } from "@emotion/react"
 
-import {
-  Config,
-  PageConfig,
-} from "@streamlit/proto"
+import { Config, PageConfig } from "@streamlit/proto"
 import { notNullOrUndefined } from "@streamlit/utils"
 import {
   BaseButton,

@@ -106,7 +106,7 @@ import {
   toThemeInput,
   WidgetStateManager,
 } from "@streamlit/lib"
-import { RERUN_PROMPT_MODAL_DIALOG } from "@streamlit/app/src/baseconsts";
+import { RERUN_PROMPT_MODAL_DIALOG } from "@streamlit/app/src/baseconsts"
 import { AppContext } from "@streamlit/app/src/components/AppContext"
 import AppView from "@streamlit/app/src/components/AppView"
 import StatusWidget from "@streamlit/app/src/components/StatusWidget"

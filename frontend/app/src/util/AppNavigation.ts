@@ -22,11 +22,7 @@ import {
   PageNotFound,
   PagesChanged,
 } from "@streamlit/proto"
-import {
-  AppRoot,
-  BlockNode,
-  HostCommunicationManager,
-} from "@streamlit/lib"
+import { AppRoot, BlockNode, HostCommunicationManager } from "@streamlit/lib"
 
 interface AppNavigationState {
   hideSidebarNav: boolean

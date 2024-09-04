@@ -20,14 +20,8 @@ import { ChevronLeft, ChevronRight } from "@emotion-icons/material-outlined"
 import { withTheme } from "@emotion/react"
 import { Resizable } from "re-resizable"
 
-import {
-  IAppPage, 
-  Logo,
-  PageConfig,
-} from "@streamlit/proto"
-import {
-  StreamlitEndpoints,
-} from "@streamlit/connection"
+import { IAppPage, Logo, PageConfig } from "@streamlit/proto"
+import { StreamlitEndpoints } from "@streamlit/connection"
 import {
   BaseButton,
   BaseButtonKind,

@@ -24,10 +24,7 @@ import { CSSTransition } from "react-transition-group"
 import { SignalConnection } from "typed-signals"
 
 import { SessionEvent } from "@streamlit/proto"
-import {
-  isNullOrUndefined,
-  notNullOrUndefined,
-} from "@streamlit/utils"
+import { isNullOrUndefined, notNullOrUndefined } from "@streamlit/utils"
 import {
   BaseButton,
   BaseButtonKind,
