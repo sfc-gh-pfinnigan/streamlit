@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { logMessage } from "@streamlit/lib/src/util/log"
+import { logMessage } from "@streamlit/utils"
 import { getRerunAnalysis } from "@streamlit/lib/src/profiler/RerunAnalyzer"
 import { ScriptRunState } from "@streamlit/lib/src/ScriptRunState"
 

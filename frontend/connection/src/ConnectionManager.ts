@@ -17,15 +17,17 @@ import { ReactNode } from "react"
 
 import { BackMsg, ForwardMsg } from "@streamlit/proto"
 import {
-  BaseUriParts,
-  ensureError,
-  getPossibleBaseUris,
-  IHostConfigResponse,
   logError,
-  SessionInfo,
-  StreamlitEndpoints,
+  BaseUriParts,
+  getPossibleBaseUris,
+  ensureError,
+} from "@streamlit/utils"
+import {
+  IHostConfigResponse,
 } from "@streamlit/lib"
 
+import { SessionInfo } from "./SessionInfo"
+import { StreamlitEndpoints} from "./StreamlitEndpoints"
 import { ConnectionState } from "./ConnectionState"
 import { WebsocketConnection } from "./WebsocketConnection"
 

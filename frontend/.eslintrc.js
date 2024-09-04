@@ -46,7 +46,9 @@ module.exports = {
   parserOptions: {
     // make the parser resolve the project configuration relative to .eslintrc.js
     tsconfigRootDir: __dirname,
-    project: "./tsconfig.dev.json",
+    projectService: {
+      defaultProject: './tsconfig.dev.json',
+    },
     ecmaFeatures: {
       jsx: true, // Allows for the parsing of JSX
     },
@@ -211,7 +213,13 @@ module.exports = {
     "import/resolver": {
       typescript: {
         // tell eslint to look at these tsconfigs for import statements
-        project: ["lib/tsconfig.json", "app/tsconfig.json"],
+        project: [
+          "proto/tsconfig.json",
+          "utils/tsconfig.json",
+          "connection/tsconfig.json",
+          "lib/tsconfig.json",
+          "app/tsconfig.json",
+        ],
       },
     },
   },

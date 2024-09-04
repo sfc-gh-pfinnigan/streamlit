@@ -24,6 +24,10 @@ import {
   LabelVisibilityMessage as LabelVisibilityMessageProto,
   Skeleton as SkeletonProto,
 } from "@streamlit/proto"
+import { 
+  notNullOrUndefined,
+  requireNonNull,
+} from "@streamlit/utils"
 
 // This prefix should be in sync with the value on the python side:
 const GENERATED_ELEMENT_ID_PREFIX = "$$ID"
@@ -254,51 +258,6 @@ export function makeAppSkeletonElement(): Element {
  */
 export function hashString(s: string): string {
   return xxhash.h32(s, 0xdeadbeef).toString(16)
-}
-
-/**
- * Coerces a possibly-null value into a non-null value, throwing an error
- * if the value is null or undefined.
- */
-export function requireNonNull<T>(obj: T | null | undefined): T {
-  if (isNullOrUndefined(obj)) {
-    throw new Error("value is null")
-  }
-  return obj
-}
-
-/**
- * A type predicate that is true if the given value is not undefined.
- */
-export function notUndefined<T>(value: T | undefined): value is T {
-  return value !== undefined
-}
-
-/**
- * A type predicate that is true if the given value is not null.
- */
-export function notNull<T>(value: T | null): value is T {
-  return notNullOrUndefined(value)
-}
-
-/**
- * A type predicate that is true if the given value is neither undefined
- * nor null.
- */
-export function notNullOrUndefined<T>(
-  value: T | null | undefined
-): value is T {
-  return <T>value !== null && <T>value !== undefined
-}
-
-/**
- * A type predicate that is true if the given value is either undefined
- * or null.
- */
-export function isNullOrUndefined<T>(
-  value: T | null | undefined
-): value is null | undefined {
-  return <T>value === null || <T>value === undefined
 }
 
 /**

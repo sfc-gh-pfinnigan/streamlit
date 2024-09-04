@@ -6,11 +6,12 @@
     "app",
     "connection",
     "lib",
-    "proto"
+    "proto",
+    "utils"
   ],
   "scripts": {
     "start": "yarn workspace @streamlit/app start",
-    "build": "yarn workspace @streamlit/proto build && yarn workspace @streamlit/lib build && yarn workspace @streamlit/connection build && yarn workspace @streamlit/app build",
+    "build": "yarn workspace @streamlit/proto build && yarn workspace @streamlit/utils build && yarn workspace @streamlit/connection build && yarn workspace @streamlit/lib build && yarn workspace @streamlit/app build",
     "buildFast": "yarn buildLib && yarn workspace @streamlit/app buildFast",
     "buildLib": "yarn workspace @streamlit/lib build",
     "buildLibProd": "yarn workspace @streamlit/lib build:prod",

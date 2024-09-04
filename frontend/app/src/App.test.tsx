@@ -35,6 +35,13 @@ import {
   PagesChanged,
 } from "@streamlit/proto"
 import {
+  ConnectionManager,
+  ConnectionState,
+  mockEndpoints,
+  mockSessionInfoProps,
+  SessionInfo,
+} from "@streamlit/connection"
+import {
   CUSTOM_THEME_NAME,
   FileUploadClient,
   getDefaultTheme,
@@ -43,18 +50,13 @@ import {
   HostCommunicationManager,
   lightTheme,
   LocalStore,
-  mockEndpoints,
-  mockSessionInfoProps,
   mockWindowLocation,
   RootStyleProvider,
   ScriptRunState,
-  SessionInfo,
   toExportedTheme,
   WidgetStateManager,
 } from "@streamlit/lib"
 import { SegmentMetricsManager } from "@streamlit/app/src/SegmentMetricsManager"
-import { ConnectionManager } from "@streamlit/connection/src/ConnectionManager"
-import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 import {
   getMenuStructure,
   openMenu,
@@ -68,9 +70,9 @@ jest.mock("@streamlit/lib/src/baseconsts", () => {
   }
 })
 
-jest.mock("@streamlit/connection/src/ConnectionManager", () => {
+jest.mock("@streamlit/connection", () => {
   const actualModule = jest.requireActual(
-    "@streamlit/connection/src/ConnectionManager"
+    "@streamlit/connection"
   )
 
   const MockedClass = jest.fn().mockImplementation(props => {
@@ -301,7 +303,6 @@ function sendForwardMessage(
 ): void {
   act(() => {
     const fwMessage = new ForwardMsg()
-    // @ts-expect-error
     fwMessage[type] = cloneDeep(message)
     if (metadata) {
       fwMessage.metadata = metadata

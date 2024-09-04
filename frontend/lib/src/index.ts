@@ -16,11 +16,6 @@
 
 // These imports are each exported specifically in order to minimize public apis.
 export { AppRoot, BlockNode, ElementNode } from "./AppNode"
-export {
-  IS_DEV_ENV,
-  RERUN_PROMPT_MODAL_DIALOG,
-  WEBSOCKET_PORT_DEV,
-} from "./baseconsts"
 export { default as VerticalBlock } from "./components/core/Block"
 export type { BlockPropsWithoutWidth } from "./components/core/Block"
 export { default as ElementNodeRenderer } from "./components/core/Block/ElementNodeRenderer"
@@ -53,7 +48,6 @@ export { Placement, default as Tooltip } from "./components/shared/Tooltip"
 export { ComponentRegistry } from "./components/widgets/CustomComponent"
 export { Quiver } from "./dataframes/Quiver"
 export { FileUploadClient } from "./FileUploadClient"
-export { ForwardMsgCache } from "./ForwardMessageCache"
 export { default as useScrollToBottom } from "./hooks/useScrollToBottom"
 export { default as HostCommunicationManager } from "./hostComm"
 export { HOST_COMM_VERSION } from "./hostComm/HostCommunicationManager"
@@ -65,17 +59,10 @@ export type {
   IMenuItem,
   IToolbarItem,
 } from "./hostComm/types"
-export {
-  mockEndpoints,
-  mockSessionInfo,
-  mockSessionInfoProps,
-} from "./mocks/mocks"
 export { mockTheme } from "./mocks/mockTheme"
 export { PerformanceEvents } from "./profiler/PerformanceEvents"
 export { RootStyleProvider } from "./RootStyleProvider"
 export { ScriptRunState } from "./ScriptRunState"
-export { SessionInfo } from "./SessionInfo"
-export type { JWTHeader, StreamlitEndpoints } from "./StreamlitEndpoints"
 export { mockWindowLocation, render } from "./test_util"
 export {
   AUTO_THEME_NAME,
@@ -100,15 +87,12 @@ export {
 export type { EmotionTheme, PresetThemeName, ThemeConfig } from "./theme"
 export { default as emotionLightTheme } from "./theme/emotionLightTheme"
 export { fonts, spacing } from "./theme/primitives"
-export { ensureError } from "./util/ErrorHandling"
 export { useIsOverflowing } from "./util/Hooks"
-export { logAlways, logError, logMessage, logWarning } from "./util/log"
 export { default as Resolver } from "./util/Resolver"
 export { LocalStore, localStorageAvailable } from "./util/storageUtils"
 export { Timer } from "./util/Timer"
-export { buildHttpUri, buildWsUri, getPossibleBaseUris } from "./util/UriUtil"
-export type { BaseUriParts } from "./util/UriUtil"
 export {
+  preserveEmbedQueryParams,
   extractPageNameFromPathName,
   generateUID,
   getCookie,
@@ -125,7 +109,6 @@ export {
   isScrollingHidden,
   isToolbarDisplayed,
   makeElementWithInfoText,
-  notUndefined,
   setCookie,
 } from "./util/utils"
 export { WidgetStateManager, createFormsData } from "./WidgetStateManager"

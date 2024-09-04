@@ -15,15 +15,17 @@
  */
 
 import {
-  AppRoot,
-  BlockNode,
-  HostCommunicationManager,
   IAppPage,
   Navigation,
   NewSession,
   PageConfig,
   PageNotFound,
   PagesChanged,
+} from "@streamlit/proto"
+import {
+  AppRoot,
+  BlockNode,
+  HostCommunicationManager,
 } from "@streamlit/lib"
 
 interface AppNavigationState {

@@ -23,23 +23,23 @@ import { HotKeys } from "react-hotkeys"
 import { CSSTransition } from "react-transition-group"
 import { SignalConnection } from "typed-signals"
 
+import { SessionEvent } from "@streamlit/proto"
+import {
+  isNullOrUndefined,
+  notNullOrUndefined,
+} from "@streamlit/utils"
 import {
   BaseButton,
   BaseButtonKind,
   EmotionTheme,
   Icon,
   Placement,
-  RERUN_PROMPT_MODAL_DIALOG,
   ScriptRunState,
-  SessionEvent,
   Timer,
   Tooltip,
 } from "@streamlit/lib"
-import {
-  isNullOrUndefined,
-  notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
-import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
+import { RERUN_PROMPT_MODAL_DIALOG } from "@streamlit/app/src/baseconsts"
+import { ConnectionState } from "@streamlit/connection"
 import { SessionEventDispatcher } from "@streamlit/app/src/SessionEventDispatcher"
 /*
  * IMPORTANT: If you change the asset import below, make sure it still works if Streamlit is served

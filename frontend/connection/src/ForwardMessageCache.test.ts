@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { ForwardMsg } from "./proto"
+import { ForwardMsg } from "@streamlit/proto"
 import { ForwardMsgCache } from "./ForwardMessageCache"
 
 interface MockCache {

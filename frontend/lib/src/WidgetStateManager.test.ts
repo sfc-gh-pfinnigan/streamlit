@@ -21,7 +21,7 @@ import {
   Button as ButtonProto,
   FileUploaderState as FileUploaderStateProto,
   UploadedFileInfo as UploadedFileInfoProto,
-} from "./proto"
+} from "@streamlit/proto"
 import {
   createFormsData,
   FormsData,

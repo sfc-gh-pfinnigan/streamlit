@@ -27,7 +27,7 @@ import {
   EmotionTheme,
   hasLightBackgroundColor,
 } from "@streamlit/lib/src/theme"
-import { ensureError } from "@streamlit/lib/src/util/ErrorHandling"
+import { ensureError } from "@streamlit/utils"
 
 export interface JsonProps {
   width: number

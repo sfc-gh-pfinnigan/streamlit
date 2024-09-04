@@ -27,7 +27,7 @@ import {
   ForwardMsgMetadata,
   IArrowVegaLiteChart,
   Logo as LogoProto,
-} from "./proto"
+} from "@streamlit/proto"
 import { AppNode, AppRoot, BlockNode, ElementNode } from "./AppNode"
 import { IndexTypeName } from "./dataframes/Quiver"
 import { UNICODE } from "./mocks/arrow"

@@ -34,17 +34,17 @@ import {
   DEFAULT_IFRAME_FEATURE_POLICY,
   DEFAULT_IFRAME_SANDBOX_POLICY,
 } from "@streamlit/lib/src/util/IFrameUtil"
-import { logWarning } from "@streamlit/lib/src/util/log"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import {
   COMMUNITY_URL,
   COMPONENT_DEVELOPER_URL,
 } from "@streamlit/lib/src/urls"
-import { ensureError } from "@streamlit/lib/src/util/ErrorHandling"
 import {
   isNullOrUndefined,
   notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+  logWarning,
+  ensureError,
+} from "@streamlit/utils"
 
 import { ComponentRegistry } from "./ComponentRegistry"
 import {

@@ -14,14 +14,13 @@
  * limitations under the License.
  */
 
+import { ForwardMsg } from "@streamlit/proto"
 import {
   isNullOrUndefined,
   notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
-
-import { ForwardMsg } from "./proto"
-import { logMessage } from "./util/log"
-import { ensureError } from "./util/ErrorHandling"
+  logMessage,
+  ensureError,
+} from "@streamlit/utils"
 import { StreamlitEndpoints } from "./StreamlitEndpoints"
 
 class CacheEntry {

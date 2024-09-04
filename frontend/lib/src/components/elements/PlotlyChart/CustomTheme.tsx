@@ -28,8 +28,7 @@ import {
   getSequentialColorsArray,
   hasLightBackgroundColor,
 } from "@streamlit/lib/src/theme"
-import { ensureError } from "@streamlit/lib/src/util/ErrorHandling"
-import { logError } from "@streamlit/lib/src/util/log"
+import { logError, ensureError } from "@streamlit/utils"
 
 /**
  * This applies general layout changes to things such as x axis,

@@ -19,25 +19,25 @@ import React, { Fragment } from "react"
 import styled from "@emotion/styled"
 import axios from "axios"
 
+import { BackMsg, ForwardMsg, IBackMsg } from "@streamlit/proto"
 import {
   isNullOrUndefined,
   notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
-import { BackMsg, ForwardMsg, IBackMsg } from "@streamlit/proto"
-import {
-  BaseUriParts,
-  buildHttpUri,
-  buildWsUri,
-  ForwardMsgCache,
-  IHostConfigResponse,
   logError,
   logMessage,
   logWarning,
+  BaseUriParts,
+  buildHttpUri,
+  buildWsUri,
+} from "@streamlit/utils"
+import {
+  IHostConfigResponse,
   PerformanceEvents,
   Resolver,
-  SessionInfo,
-  StreamlitEndpoints,
 } from "@streamlit/lib"
+import { ForwardMsgCache } from "@streamlit/connection/src/ForwardMessageCache"
+import { SessionInfo } from "@streamlit/connection/src/SessionInfo"
+import { StreamlitEndpoints } from "@streamlit/connection/src/StreamlitEndpoints"
 import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 
 /**

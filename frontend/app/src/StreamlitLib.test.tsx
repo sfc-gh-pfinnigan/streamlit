@@ -22,6 +22,10 @@ import "@testing-library/jest-dom"
 import { screen, waitFor } from "@testing-library/react"
 
 import {
+  StreamlitEndpoints,
+  SessionInfo,
+} from "@streamlit/connection"
+import {
   AppRoot,
   ComponentRegistry,
   createFormsData,
@@ -32,8 +36,6 @@ import {
   ForwardMsgMetadata as ForwardMsgMetadataProto,
   render,
   ScriptRunState,
-  SessionInfo,
-  StreamlitEndpoints,
   Text as TextProto,
   VerticalBlock,
   WidgetStateManager,

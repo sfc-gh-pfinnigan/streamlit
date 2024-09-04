@@ -18,15 +18,15 @@ import React, { CSSProperties, ReactElement, ReactNode } from "react"
 
 import { HotKeys } from "react-hotkeys"
 
+import { IException } from "@streamlit/proto"
+import { SessionInfo } from "@streamlit/connection"
 import {
   BaseButtonKind,
-  IException,
   Modal,
   ModalBody,
   ModalButton,
   ModalFooter,
   ModalHeader,
-  SessionInfo,
   StreamlitMarkdown,
 } from "@streamlit/lib"
 import {

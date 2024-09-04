@@ -33,7 +33,7 @@ import {
   Button as SubmitButtonProto,
   WidgetState,
   WidgetStates,
-} from "./proto"
+} from "@streamlit/proto"
 
 export interface Source {
   fromUi: boolean

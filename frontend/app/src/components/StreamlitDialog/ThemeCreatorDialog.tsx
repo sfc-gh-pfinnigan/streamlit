@@ -21,13 +21,13 @@ import { toHex } from "color2k"
 import humanizeString from "humanize-string"
 import mapValues from "lodash/mapValues"
 
+import { CustomThemeConfig } from "@streamlit/proto"
 import {
   BaseButton,
   BaseButtonKind,
   BaseColorPicker,
   createTheme,
   CUSTOM_THEME_NAME,
-  CustomThemeConfig,
   darkTheme,
   EmotionTheme,
   Icon,

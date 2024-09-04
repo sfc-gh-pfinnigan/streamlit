@@ -17,13 +17,16 @@
 import { produce } from "immer"
 
 import {
-  getLoadingScreenType,
   isNullOrUndefined,
+  notUndefined,
+  ensureError,
+} from "@streamlit/utils"
+import {
+  getLoadingScreenType,
   LoadingScreenType,
   makeAppSkeletonElement,
   makeElementWithErrorText,
   makeElementWithInfoText,
-  notUndefined,
 } from "@streamlit/lib/src/util/utils"
 
 import {
@@ -37,13 +40,12 @@ import {
   IArrow,
   IArrowNamedDataSet,
   Logo,
-} from "./proto"
+} from "@streamlit/proto"
 import {
   VegaLiteChartElement,
   WrappedNamedDataset,
 } from "./components/elements/ArrowVegaLiteChart"
 import { Quiver } from "./dataframes/Quiver"
-import { ensureError } from "./util/ErrorHandling"
 
 const NO_SCRIPT_RUN_ID = "NO_SCRIPT_RUN_ID"
 

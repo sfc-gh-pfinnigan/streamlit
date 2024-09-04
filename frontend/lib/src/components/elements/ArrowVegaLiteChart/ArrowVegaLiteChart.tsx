@@ -25,16 +25,19 @@ import isEqual from "lodash/isEqual"
 
 import {
   debounce,
-  isNullOrUndefined,
-  notNullOrUndefined,
 } from "@streamlit/lib/src/util/utils"
 import {
   WidgetInfo,
   WidgetStateManager,
 } from "@streamlit/lib/src/WidgetStateManager"
-import { logMessage, logWarning } from "@streamlit/lib/src/util/log"
+import {
+  isNullOrUndefined,
+  notNullOrUndefined,
+  logMessage,
+  logWarning,
+  ensureError,
+} from "@streamlit/utils"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
-import { ensureError } from "@streamlit/lib/src/util/ErrorHandling"
 import { Quiver } from "@streamlit/lib/src/dataframes/Quiver"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"

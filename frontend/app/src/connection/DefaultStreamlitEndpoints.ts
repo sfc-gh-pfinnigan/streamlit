@@ -16,14 +16,13 @@
 
 import axios, { AxiosRequestConfig, AxiosResponse, CancelToken } from "axios"
 
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
+import { IAppPage } from "@streamlit/proto"
+import { JWTHeader, StreamlitEndpoints } from "@streamlit/connection"
 import {
   BaseUriParts,
   buildHttpUri,
   getCookie,
-  IAppPage,
-  JWTHeader,
-  StreamlitEndpoints,
 } from "@streamlit/lib"
 
 interface Props {

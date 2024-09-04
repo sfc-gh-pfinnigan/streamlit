@@ -16,7 +16,7 @@
 
 import { CancelToken } from "axios"
 
-import { IAppPage } from "./proto"
+import { IAppPage } from "@streamlit/proto"
 
 export type JWTHeader = {
   jwtHeaderName: string

@@ -20,11 +20,11 @@ import { v4 as uuidv4 } from "uuid"
 
 import { IFileURLs, IFileURLsResponse } from "@streamlit/proto"
 
-import { SessionInfo } from "./SessionInfo"
-import { StreamlitEndpoints } from "./StreamlitEndpoints"
-import { logWarning } from "./util/log"
+import { SessionInfo } from "@streamlit/utils/src/SessionInfo"
+import { StreamlitEndpoints } from "@streamlit/connection"
+import { logWarning } from "@streamlit/utils"
 import Resolver from "./util/Resolver"
-import { isValidFormId } from "./util/utils"
+import { isValidFormId } from "../../utils/src/utils"
 
 /** Common widget protobuf fields that are used by the FileUploadClient. */
 interface WidgetInfo {

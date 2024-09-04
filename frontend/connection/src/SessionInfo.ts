@@ -20,8 +20,8 @@ import {
   Initialize,
   NewSession,
   UserInfo,
-} from "./proto"
-import { hashString, notNullOrUndefined } from "./util/utils"
+} from "@streamlit/proto"
+import { hashString, notNullOrUndefined } from "@streamlit/utils"
 
 /**
  * SessionInfo properties. These don't change during the lifetime of a session.

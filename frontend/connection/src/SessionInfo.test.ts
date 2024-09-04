@@ -15,8 +15,8 @@
  */
 
 import { SessionInfo } from "./SessionInfo"
-import { NewSession } from "./proto"
-import { mockSessionInfoProps } from "./mocks/mocks"
+import { NewSession } from "@streamlit/proto"
+import { mockSessionInfoProps } from "@streamlit/connection/src/mocks/mocks"
 
 test("Throws an error when used before initialization", () => {
   const sessionInfo = new SessionInfo()

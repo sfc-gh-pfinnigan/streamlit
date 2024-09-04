@@ -25,7 +25,7 @@ import {
   ScriptRunState,
   SessionEvent,
 } from "@streamlit/lib"
-import { ConnectionState } from "@streamlit/app/src/connection/ConnectionState"
+import { ConnectionState } from "@streamlit/connection"
 import { SessionEventDispatcher } from "@streamlit/app/src/SessionEventDispatcher"
 
 import StatusWidget, { StatusWidgetProps } from "./StatusWidget"

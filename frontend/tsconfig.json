@@ -22,7 +22,8 @@
     { "path": "./app" },
     { "path": "./connection" },
     { "path": "./lib" },
-    { "path": "./proto" }
+    { "path": "./proto" },
+    { "path": "./utils" },
   ],
   "files": [],
   "include": [],

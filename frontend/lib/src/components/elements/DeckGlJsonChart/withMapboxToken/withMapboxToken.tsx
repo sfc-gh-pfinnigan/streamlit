@@ -19,7 +19,7 @@ import React, { ComponentType, PureComponent, ReactNode } from "react"
 import hoistNonReactStatics from "hoist-non-react-statics"
 import axios from "axios"
 
-import { ensureError } from "@streamlit/lib/src/util/ErrorHandling"
+import { ensureError } from "@streamlit/utils"
 import { DeckGlJsonChart, Skeleton as SkeletonProto } from "@streamlit/proto"
 import { Skeleton } from "@streamlit/lib/src/components/elements/Skeleton"
 import { LibContext } from "@streamlit/lib/src/components/core/LibContext"

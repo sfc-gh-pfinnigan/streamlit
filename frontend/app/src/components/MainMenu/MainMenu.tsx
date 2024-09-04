@@ -21,16 +21,18 @@ import { PLACEMENT, StatefulPopover } from "baseui/popover"
 import { MoreVert } from "@emotion-icons/material-rounded"
 import { useTheme } from "@emotion/react"
 
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import {
+  Config,
+  PageConfig,
+} from "@streamlit/proto"
+import { notNullOrUndefined } from "@streamlit/utils"
 import {
   BaseButton,
   BaseButtonKind,
-  Config,
   EmotionTheme,
   Icon,
   IGuestToHostMessage,
   IMenuItem,
-  PageConfig,
 } from "@streamlit/lib"
 import ScreenCastRecorder from "@streamlit/app/src/util/ScreenCastRecorder"
 import { SegmentMetricsManager } from "@streamlit/app/src/SegmentMetricsManager"

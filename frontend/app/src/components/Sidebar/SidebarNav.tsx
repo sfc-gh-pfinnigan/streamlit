@@ -27,7 +27,9 @@ import groupBy from "lodash/groupBy"
 // isMobile field sanely.
 import * as reactDeviceDetect from "react-device-detect"
 
-import { IAppPage, StreamlitEndpoints, useIsOverflowing } from "@streamlit/lib"
+import { IAppPage } from "@streamlit/proto"
+import { StreamlitEndpoints } from "@streamlit/connection"
+import { useIsOverflowing } from "@streamlit/lib"
 import { AppContext } from "@streamlit/app/src/components/AppContext"
 
 import NavSection from "./NavSection"

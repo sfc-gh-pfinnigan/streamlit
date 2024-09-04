@@ -16,19 +16,20 @@
 
 import React, { ReactElement } from "react"
 
+import { IAppPage, Logo } from "@streamlit/proto"
+import {
+  StreamlitEndpoints,
+  SessionInfo,
+} from "@streamlit/connection"
 import {
   AppRoot,
   BlockNode,
   ComponentRegistry,
   FileUploadClient,
   FormsData,
-  IAppPage,
   IGuestToHostMessage,
   LibContext,
-  Logo,
   ScriptRunState,
-  SessionInfo,
-  StreamlitEndpoints,
   VerticalBlock,
   WidgetStateManager,
 } from "@streamlit/lib"

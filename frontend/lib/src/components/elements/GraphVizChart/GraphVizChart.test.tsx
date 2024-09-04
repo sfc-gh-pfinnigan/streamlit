@@ -20,7 +20,7 @@ import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 import { graphviz } from "d3-graphviz"
 
-import { logError } from "@streamlit/lib/src/util/log"
+import { logError } from "@streamlit/utils"
 import { render } from "@streamlit/lib/src/test_util"
 import { GraphVizChart as GraphVizChartProto } from "@streamlit/proto"
 
@@ -41,7 +41,7 @@ jest.mock("d3-graphviz", () => ({
     }),
   }),
 }))
-jest.mock("@streamlit/lib/src/util/log", () => ({
+jest.mock("@streamlit/utils", () => ({
   logError: jest.fn(),
   logMessage: jest.fn(),
 }))
@@ -59,7 +59,6 @@ const getProps = (
 
 describe("GraphVizChart Element", () => {
   beforeEach(() => {
-    // @ts-expect-error
     logError.mockClear()
   })
 

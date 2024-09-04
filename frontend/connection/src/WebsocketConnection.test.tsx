@@ -24,8 +24,8 @@ import { BackMsg } from "@streamlit/proto"
 import {
   mockEndpoints,
   mockSessionInfoProps,
-  SessionInfo,
-} from "@streamlit/lib"
+} from "@streamlit/connection/src/mocks/mocks"
+import { SessionInfo } from "@streamlit/connection/src/SessionInfo"
 import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 import {
   Args,

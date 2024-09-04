@@ -21,18 +21,22 @@ import { withTheme } from "@emotion/react"
 import { Resizable } from "re-resizable"
 
 import {
+  IAppPage, 
+  Logo,
+  PageConfig,
+} from "@streamlit/proto"
+import {
+  StreamlitEndpoints,
+} from "@streamlit/connection"
+import {
   BaseButton,
   BaseButtonKind,
   EmotionTheme,
-  IAppPage,
   Icon,
   isColoredLineDisplayed,
   isEmbed,
   IsSidebarContext,
   localStorageAvailable,
-  Logo,
-  PageConfig,
-  StreamlitEndpoints,
 } from "@streamlit/lib"
 
 import {

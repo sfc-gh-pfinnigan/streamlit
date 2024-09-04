@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig.dev.json",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "composite": true,
     "checkJs": false,
@@ -10,9 +10,8 @@
     "outDir": "dist",
     "rootDir": "src"
   },
-  "include": ["src/*", "../lib/src/declarations.d.ts"],
   "references": [
-    { "path": "../lib" },
-    { "path": "../proto" }
+    { "path": "../proto" },
+    { "path": "../utils" }
   ]
 }

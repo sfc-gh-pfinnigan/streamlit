@@ -50,9 +50,22 @@ import {
   WidgetStates,
 } from "@streamlit/proto"
 import {
+  BaseUriParts,
+  isNullOrUndefined,
+  notNullOrUndefined,
+  notUndefined,
+  logError,
+  logMessage,
+} from "@streamlit/utils"
+import {
+  ConnectionManager,
+  ConnectionState,
+  StreamlitEndpoints,
+  SessionInfo,
+} from "@streamlit/connection"
+import {
   AppConfig,
   AppRoot,
-  BaseUriParts,
   ComponentRegistry,
   createFormsData,
   createPresetThemes,
@@ -84,25 +97,16 @@ import {
   IToolbarItem,
   LibConfig,
   LibContext,
-  logError,
-  logMessage,
-  notUndefined,
   PerformanceEvents,
+  preserveEmbedQueryParams,
   PresetThemeName,
-  RERUN_PROMPT_MODAL_DIALOG,
   ScriptRunState,
-  SessionInfo,
-  StreamlitEndpoints,
   ThemeConfig,
   toExportedTheme,
   toThemeInput,
   WidgetStateManager,
 } from "@streamlit/lib"
-import {
-  isNullOrUndefined,
-  notNullOrUndefined,
-  preserveEmbedQueryParams,
-} from "@streamlit/lib/src/util/utils"
+import { RERUN_PROMPT_MODAL_DIALOG } from "@streamlit/app/src/baseconsts";
 import { AppContext } from "@streamlit/app/src/components/AppContext"
 import AppView from "@streamlit/app/src/components/AppView"
 import StatusWidget from "@streamlit/app/src/components/StatusWidget"
@@ -115,8 +119,6 @@ import {
   DialogType,
   StreamlitDialog,
 } from "@streamlit/app/src/components/StreamlitDialog"
-import { ConnectionManager } from "@streamlit/connection/src/ConnectionManager"
-import { ConnectionState } from "@streamlit/connection/src/ConnectionState"
 import { SessionEventDispatcher } from "@streamlit/app/src/SessionEventDispatcher"
 import { UserSettings } from "@streamlit/app/src/components/StreamlitDialog/UserSettings"
 import { DefaultStreamlitEndpoints } from "@streamlit/app/src/connection/DefaultStreamlitEndpoints"
