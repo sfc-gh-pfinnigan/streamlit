@@ -21,10 +21,8 @@ import isEqual from "lodash/isEqual"
 import zip from "lodash/zip"
 import { FileRejection } from "react-dropzone"
 
-import {
-  isNullOrUndefined,
-  labelVisibilityProtoValueToEnum,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined } from "@streamlit/utils"
+import { labelVisibilityProtoValueToEnum } from "@streamlit/lib/src/util/utils"
 import {
   FileUploader as FileUploaderProto,
   FileUploaderState as FileUploaderStateProto,

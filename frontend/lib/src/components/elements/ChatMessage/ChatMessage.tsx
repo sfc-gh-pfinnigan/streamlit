@@ -22,7 +22,7 @@ import { Face, SmartToy } from "@emotion-icons/material-outlined"
 import { Block as BlockProto } from "@streamlit/proto"
 import Icon, { DynamicIcon } from "@streamlit/lib/src/components/shared/Icon"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
-import { StreamlitEndpoints } from "@streamlit/lib/src/StreamlitEndpoints"
+import { StreamlitEndpoints } from "@streamlit/connection"
 
 import {
   StyledAvatarBackground,

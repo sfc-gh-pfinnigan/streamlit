@@ -18,10 +18,7 @@ import { GridCell, GridCellKind } from "@glideapps/glide-data-grid"
 import { DatePickerType } from "@glideapps/glide-data-grid-cells"
 import moment, { Moment } from "moment-timezone"
 
-import {
-  isNullOrUndefined,
-  notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined, notNullOrUndefined } from "@streamlit/utils"
 
 import {
   BaseColumn,

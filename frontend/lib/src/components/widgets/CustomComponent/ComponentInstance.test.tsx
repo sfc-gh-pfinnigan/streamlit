@@ -27,12 +27,11 @@ import {
   DEFAULT_IFRAME_FEATURE_POLICY,
   DEFAULT_IFRAME_SANDBOX_POLICY,
 } from "@streamlit/lib/src/util/IFrameUtil"
-import { logWarning } from "@streamlit/lib/src/util/log"
-import { buildHttpUri } from "@streamlit/lib/src/util/UriUtil"
+import { logWarning, buildHttpUri } from "@streamlit/utils"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import { bgColorToBaseString, toExportedTheme } from "@streamlit/lib/src/theme"
 import { fonts } from "@streamlit/lib/src/theme/primitives/typography"
-import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
+import { mockEndpoints } from "@streamlit/connection"
 import { mockTheme } from "@streamlit/lib/src/mocks/mockTheme"
 import { render } from "@streamlit/lib/src/test_util"
 
@@ -44,7 +43,7 @@ import { ComponentRegistry } from "./ComponentRegistry"
 import { ComponentMessageType, StreamlitMessageType } from "./enums"
 
 // Mock log functions.
-jest.mock("@streamlit/lib/src/util/log")
+jest.mock("@streamlit/utils")
 
 // We have some timeouts that we want to use fake timers for.
 jest.useFakeTimers()

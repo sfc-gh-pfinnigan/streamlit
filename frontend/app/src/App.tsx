@@ -57,6 +57,7 @@ import {
   logError,
   logMessage,
   ensureError,
+  hashString,
 } from "@streamlit/utils"
 import {
   ConnectionManager,
@@ -85,7 +86,6 @@ import {
   getHostSpecifiedTheme,
   getIFrameEnclosingApp,
   handleFavicon,
-  hashString,
   HostCommunicationManager,
   IMenuItem,
   isColoredLineDisplayed,

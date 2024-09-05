@@ -21,7 +21,7 @@ import { screen } from "@testing-library/react"
 
 import { render } from "@streamlit/lib/src/test_util"
 import { Audio as AudioProto } from "@streamlit/proto"
-import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
+import { mockEndpoints } from "@streamlit/connection"
 import { WidgetStateManager as ElementStateManager } from "@streamlit/lib/src/WidgetStateManager"
 
 import Audio, { AudioProps } from "./Audio"

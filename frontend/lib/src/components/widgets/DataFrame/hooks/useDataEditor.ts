@@ -25,8 +25,7 @@ import {
   ValidatedGridCell,
 } from "@glideapps/glide-data-grid"
 
-import { logWarning } from "@streamlit/lib/src/util/log"
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined, logWarning } from "@streamlit/utils"
 import {
   BaseColumn,
   isErrorCell,

@@ -40,9 +40,9 @@ import numbro from "numbro"
 import {
   isNullOrUndefined,
   notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+  logWarning,
+} from "@streamlit/utils"
 import { IArrow, Styler as StylerProto } from "@streamlit/proto"
-import { logWarning } from "@streamlit/lib/src/util/log"
 
 /** Data types used by ArrowJS. */
 export type DataType =

@@ -28,10 +28,8 @@ import { useTheme } from "@emotion/react"
 import { LibContext } from "@streamlit/lib/src/components/core/LibContext"
 import { Block as BlockProto } from "@streamlit/proto"
 import { AppNode, BlockNode, ElementNode } from "@streamlit/lib/src/AppNode"
-import {
-  getElementId,
-  notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
+import { getElementId } from "@streamlit/lib/src/util/utils"
 import { Form } from "@streamlit/lib/src/components/widgets/Form"
 import Tabs, { TabProps } from "@streamlit/lib/src/components/elements/Tabs"
 import Popover from "@streamlit/lib/src/components/elements/Popover"

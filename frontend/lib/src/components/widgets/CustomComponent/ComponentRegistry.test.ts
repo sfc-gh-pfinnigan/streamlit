@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
+import { mockEndpoints } from "@streamlit/connection"
 
 import { ComponentRegistry } from "./ComponentRegistry"
 

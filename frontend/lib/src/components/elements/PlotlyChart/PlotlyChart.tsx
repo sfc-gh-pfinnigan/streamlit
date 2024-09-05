@@ -29,10 +29,8 @@ import { EmotionTheme } from "@streamlit/lib/src/theme"
 import { PlotlyChart as PlotlyChartProto } from "@streamlit/proto"
 import { withFullScreenWrapper } from "@streamlit/lib/src/components/shared/FullScreenWrapper"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
-import {
-  keysToSnakeCase,
-  notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
+import { keysToSnakeCase } from "@streamlit/lib/src/util/utils"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form/FormClearHelper"
 
 import {

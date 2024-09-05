@@ -15,7 +15,7 @@
  */
 
 import { FileUploadClient } from "./FileUploadClient"
-import { mockSessionInfo } from "./mocks/mocks"
+import { mockSessionInfo } from "@streamlit/connection"
 
 const MOCK_FILE_ID = -111
 const MOCK_FILE = new File(["file1"], "file1.txt")

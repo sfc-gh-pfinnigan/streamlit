@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { isNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined } from "@streamlit/utils"
 import { IndexTypeName, Quiver } from "@streamlit/lib/src/dataframes/Quiver"
 
 const MagicFields = {

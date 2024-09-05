@@ -34,10 +34,8 @@ import {
 import TooltipIcon from "@streamlit/lib/src/components/shared/TooltipIcon"
 import { Placement } from "@streamlit/lib/src/components/shared/Tooltip"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
-import {
-  isNullOrUndefined,
-  labelVisibilityProtoValueToEnum,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined } from "@streamlit/utils"
+import { labelVisibilityProtoValueToEnum } from "@streamlit/lib/src/util/utils"
 
 import { StyledClearIconContainer } from "./styled-components"
 

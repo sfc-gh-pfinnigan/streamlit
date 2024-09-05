@@ -17,7 +17,7 @@
 import React from "react"
 
 import ErrorElement from "@streamlit/lib/src/components/shared/ErrorElement"
-import { logError } from "@streamlit/lib/src/util/log"
+import { logError } from "@streamlit/utils"
 
 export interface Props {
   width?: number

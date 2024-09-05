@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-import { isNullOrUndefined } from "@streamlit/lib/src/util/utils"
-import { logWarning } from "@streamlit/lib/src/util/log"
+import { isNullOrUndefined, logWarning } from "@streamlit/utils"
 import {
   ArrowDataframe,
   ComponentInstance as ComponentInstanceProto,

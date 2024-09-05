@@ -18,7 +18,7 @@ import React from "react"
 
 import { DataEditorProps, GridCell } from "@glideapps/glide-data-grid"
 
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
 import { Quiver } from "@streamlit/lib/src/dataframes/Quiver"
 import { getCellFromArrow } from "@streamlit/lib/src/components/widgets/DataFrame/arrowUtils"
 import EditingState from "@streamlit/lib/src/components/widgets/DataFrame/EditingState"

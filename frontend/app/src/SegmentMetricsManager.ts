@@ -21,9 +21,10 @@ import {
   IS_DEV_ENV,
   isNullOrUndefined,
   notNullOrUndefined,
+  logAlways,
 } from "@streamlit/utils"
 import { SessionInfo } from "@streamlit/connection"
-import { DeployedAppMetadata, logAlways } from "@streamlit/lib"
+import { DeployedAppMetadata } from "@streamlit/lib"
 import { initializeSegment } from "@streamlit/app/src/vendor/Segment"
 
 /**

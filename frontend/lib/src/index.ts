@@ -96,7 +96,6 @@ export {
   getElementId,
   getEmbeddingIdClassName,
   getIFrameEnclosingApp,
-  hashString,
   isColoredLineDisplayed,
   isDarkThemeInQueryParams,
   isEmbed,

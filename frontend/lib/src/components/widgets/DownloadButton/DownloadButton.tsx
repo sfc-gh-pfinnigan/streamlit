@@ -24,7 +24,7 @@ import BaseButton, {
   DynamicButtonLabel,
 } from "@streamlit/lib/src/components/shared/BaseButton"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
-import { StreamlitEndpoints } from "@streamlit/lib/src/StreamlitEndpoints"
+import { StreamlitEndpoints } from "@streamlit/connection"
 import { LibContext } from "@streamlit/lib/src/components/core/LibContext"
 
 export interface Props {

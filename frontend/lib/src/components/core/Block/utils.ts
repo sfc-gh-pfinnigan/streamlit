@@ -22,8 +22,7 @@ import {
 } from "@streamlit/lib/src/WidgetStateManager"
 import { FileUploadClient } from "@streamlit/lib/src/FileUploadClient"
 import { ComponentRegistry } from "@streamlit/lib/src/components/widgets/CustomComponent"
-import { SessionInfo } from "@streamlit/lib/src/SessionInfo"
-import { StreamlitEndpoints } from "@streamlit/lib/src/StreamlitEndpoints"
+import { SessionInfo, StreamlitEndpoints } from "@streamlit/connection"
 import { EmotionTheme, getDividerColors } from "@streamlit/lib/src/theme"
 
 export function shouldComponentBeEnabled(

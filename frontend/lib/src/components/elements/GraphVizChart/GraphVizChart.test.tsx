@@ -59,6 +59,7 @@ const getProps = (
 
 describe("GraphVizChart Element", () => {
   beforeEach(() => {
+    // @ts-expect-error
     logError.mockClear()
   })
 

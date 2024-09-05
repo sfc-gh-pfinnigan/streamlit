@@ -22,12 +22,12 @@ import "@testing-library/jest-dom"
 import { render } from "@streamlit/lib/src/test_util"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
 import { DownloadButton as DownloadButtonProto } from "@streamlit/proto"
-import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
+import { mockEndpoints } from "@streamlit/connection"
 
 import DownloadButton, { createDownloadLink, Props } from "./DownloadButton"
 
 jest.mock("@streamlit/lib/src/WidgetStateManager")
-jest.mock("@streamlit/lib/src/StreamlitEndpoints")
+jest.mock("@streamlit/utils")
 
 const getProps = (
   elementProps: Partial<DownloadButtonProto> = {},

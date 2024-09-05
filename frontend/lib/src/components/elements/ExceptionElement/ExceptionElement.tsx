@@ -16,7 +16,7 @@
 
 import React, { ReactElement } from "react"
 
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
 import AlertContainer, {
   Kind,
 } from "@streamlit/lib/src/components/shared/AlertContainer"

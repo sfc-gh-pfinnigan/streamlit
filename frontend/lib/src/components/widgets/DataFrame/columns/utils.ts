@@ -36,10 +36,7 @@ import {
   Type as ArrowType,
   Quiver,
 } from "@streamlit/lib/src/dataframes/Quiver"
-import {
-  isNullOrUndefined,
-  notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined, notNullOrUndefined } from "@streamlit/utils"
 
 /**
  * Interface used for defining the properties (configuration options) of a column.

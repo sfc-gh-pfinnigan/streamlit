@@ -25,10 +25,8 @@ import {
   WidgetStateManager,
 } from "@streamlit/lib/src/WidgetStateManager"
 import UISelectbox from "@streamlit/lib/src/components/shared/Dropdown"
-import {
-  isNullOrUndefined,
-  labelVisibilityProtoValueToEnum,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined } from "@streamlit/utils"
+import { labelVisibilityProtoValueToEnum } from "@streamlit/lib/src/util/utils"
 import { EmotionTheme } from "@streamlit/lib/src/theme"
 
 export interface Props {

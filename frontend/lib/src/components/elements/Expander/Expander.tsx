@@ -25,7 +25,7 @@ import {
   StyledSpinnerIcon,
 } from "@streamlit/lib/src/components/shared/Icon"
 import StreamlitMarkdown from "@streamlit/lib/src/components/shared/StreamlitMarkdown"
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
 import { LibContext } from "@streamlit/lib/src/components/core/LibContext"
 import { IconSize, isPresetTheme } from "@streamlit/lib/src/theme"
 

@@ -26,7 +26,7 @@ import Modal, {
 } from "@streamlit/lib/src/components/shared/Modal"
 import { Block as BlockProto } from "@streamlit/proto"
 import IsDialogContext from "@streamlit/lib/src/components/core/IsDialogContext"
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
 
 import { StyledDialogContent } from "./styled-components"
 

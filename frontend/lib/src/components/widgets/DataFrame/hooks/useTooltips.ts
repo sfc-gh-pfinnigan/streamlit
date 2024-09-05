@@ -22,7 +22,7 @@ import {
   GridMouseEventArgs,
 } from "@glideapps/glide-data-grid"
 
-import { notNullOrUndefined } from "@streamlit/lib/src/util/utils"
+import { notNullOrUndefined } from "@streamlit/utils"
 import {
   BaseColumn,
   hasTooltip,

@@ -24,8 +24,9 @@ import { Arrow as ArrowProto } from "@streamlit/proto"
 import {
   isNullOrUndefined,
   notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
-import { logError, logWarning } from "@streamlit/lib/src/util/log"
+  logError,
+  logWarning,
+} from "@streamlit/utils"
 import {
   getAllColumnsFromArrow,
   getColumnTypeFromArrow,

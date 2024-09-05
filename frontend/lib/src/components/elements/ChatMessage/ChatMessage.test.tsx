@@ -19,7 +19,7 @@ import React from "react"
 import "@testing-library/jest-dom"
 import { screen } from "@testing-library/react"
 
-import { mockEndpoints } from "@streamlit/lib/src/mocks/mocks"
+import { mockEndpoints } from "@streamlit/connection"
 import { render } from "@streamlit/lib/src/test_util"
 import { Block as BlockProto } from "@streamlit/proto"
 

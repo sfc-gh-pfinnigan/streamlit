@@ -22,8 +22,8 @@ import {
   BaseColumn,
   toSafeString,
 } from "@streamlit/lib/src/components/widgets/DataFrame/columns"
-import { isNullOrUndefined } from "@streamlit/lib/src/util/utils"
-import { logError, logWarning } from "@streamlit/lib/src/util/log"
+import { isNullOrUndefined } from "@streamlit/utils"
+import { logError, logWarning } from "@streamlit/utils"
 
 // Delimiter between cells
 const CSV_DELIMITER = ","

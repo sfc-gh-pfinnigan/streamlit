@@ -32,7 +32,7 @@ import {
   ThemeConfig,
   ThemeSpacing,
 } from "@streamlit/lib/src/theme"
-import { logError } from "@streamlit/lib/src/util/log"
+import { logError } from "@streamlit/utils"
 import {
   localStorageAvailable,
   LocalStore,

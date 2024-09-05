@@ -15,10 +15,7 @@
  */
 import React, { CSSProperties, ReactElement } from "react"
 
-import {
-  isNullOrUndefined,
-  notNullOrUndefined,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined, notNullOrUndefined } from "@streamlit/utils"
 import { IFrame as IFrameProto } from "@streamlit/proto"
 import {
   DEFAULT_IFRAME_FEATURE_POLICY,

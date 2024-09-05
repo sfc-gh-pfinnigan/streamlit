@@ -24,10 +24,8 @@ import { hasMatch, score } from "fzy.js"
 import sortBy from "lodash/sortBy"
 
 import VirtualDropdown from "@streamlit/lib/src/components/shared/Dropdown/VirtualDropdown"
-import {
-  isNullOrUndefined,
-  LabelVisibilityOptions,
-} from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined } from "@streamlit/utils"
+import { LabelVisibilityOptions } from "@streamlit/lib/src/util/utils"
 import { Placement } from "@streamlit/lib/src/components/shared/Tooltip"
 import TooltipIcon from "@streamlit/lib/src/components/shared/TooltipIcon"
 import {

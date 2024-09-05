@@ -36,12 +36,10 @@ import {
 } from "@streamlit/lib/src/components/widgets/BaseWidget"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
 import { FileUploadClient } from "@streamlit/lib/src/FileUploadClient"
-import { logError } from "@streamlit/lib/src/util/log"
+import { logError } from "@streamlit/utils"
 import { WidgetStateManager } from "@streamlit/lib/src/WidgetStateManager"
-import {
-  isNullOrUndefined,
-  labelVisibilityProtoValueToEnum,
-} from "@streamlit/lib/src/util/utils"
+import { labelVisibilityProtoValueToEnum } from "@streamlit/lib/src/util/utils"
+import { isNullOrUndefined } from "@streamlit/utils"
 import {
   UploadedStatus,
   UploadFileInfo,

@@ -24,12 +24,14 @@ import uniqueId from "lodash/uniqueId"
 
 import {
   isInForm,
-  isNullOrUndefined,
   labelVisibilityProtoValueToEnum,
-  notNullOrUndefined,
 } from "@streamlit/lib/src/util/utils"
 import { FormClearHelper } from "@streamlit/lib/src/components/widgets/Form"
-import { logWarning } from "@streamlit/lib/src/util/log"
+import {
+  isNullOrUndefined,
+  notNullOrUndefined,
+  logWarning,
+} from "@streamlit/utils"
 import { NumberInput as NumberInputProto } from "@streamlit/proto"
 import {
   Source,

@@ -26,7 +26,7 @@ import {
 import TooltipIcon from "@streamlit/lib/src/components/shared/TooltipIcon"
 import { Placement } from "@streamlit/lib/src/components/shared/Tooltip"
 import { LabelVisibilityOptions } from "@streamlit/lib/src/util/utils"
-import { logWarning } from "@streamlit/lib/src/util/log"
+import { logWarning } from "@streamlit/utils"
 
 import {
   StyledChromePicker,

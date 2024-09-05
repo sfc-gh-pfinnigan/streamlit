@@ -33,7 +33,7 @@ import {
 } from "@streamlit/lib/src/WidgetStateManager"
 import { FileUploadClient } from "@streamlit/lib/src/FileUploadClient"
 import { ComponentRegistry } from "@streamlit/lib/src/components/widgets/CustomComponent"
-import { mockEndpoints, mockSessionInfo } from "@streamlit/lib/src/mocks/mocks"
+import { mockEndpoints, mockSessionInfo } from "@streamlit/connection"
 
 import ElementNodeRenderer, {
   ElementNodeRendererProps,
