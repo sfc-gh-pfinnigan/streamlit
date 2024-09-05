@@ -250,14 +250,6 @@ export function makeAppSkeletonElement(): Element {
 }
 
 /**
- * A helper function to hash a string using xxHash32 algorithm.
- * Seed used: 0xDEADBEEF
- */
-export function hashString(s: string): string {
-  return xxhash.h32(s, 0xdeadbeef).toString(16)
-}
-
-/**
  * A promise that would be resolved after certain time
  * @param ms number
  */

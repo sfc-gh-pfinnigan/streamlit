@@ -22,12 +22,10 @@ import {
   getPossibleBaseUris,
   ensureError,
 } from "@streamlit/utils"
-import {
-  IHostConfigResponse,
-} from "@streamlit/lib"
 
+import { IHostConfigResponse } from "./types/Config"
 import { SessionInfo } from "./SessionInfo"
-import { StreamlitEndpoints} from "./StreamlitEndpoints"
+import { StreamlitEndpoints } from "./StreamlitEndpoints"
 import { ConnectionState } from "./ConnectionState"
 import { WebsocketConnection } from "./WebsocketConnection"
 

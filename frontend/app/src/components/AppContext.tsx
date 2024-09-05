@@ -16,8 +16,8 @@
 
 import React from "react"
 
-import { AppConfig, IGitInfo, PageConfig } from "@streamlit/lib"
-
+import { IGitInfo, PageConfig } from "@streamlit/proto"
+import { AppConfig } from "@streamlit/connection"
 export interface Props {
   /**
    * If true, render the app with a wider column size.

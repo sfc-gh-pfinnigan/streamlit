@@ -19,6 +19,9 @@
     "lint": "eslint --ext .js --ext .jsx --ext .ts --ext .tsx --max-warnings 0 src"
   },
   "dependencies": {
+    "@emotion/cache": "^11.10.5",
+    "@emotion/is-prop-valid": "^1.2.0",
+    "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@streamlit/proto": "1.0.0",
     "@streamlit/utils": "1.0.0",

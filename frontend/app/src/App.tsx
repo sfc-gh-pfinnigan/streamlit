@@ -56,15 +56,18 @@ import {
   notUndefined,
   logError,
   logMessage,
+  ensureError,
 } from "@streamlit/utils"
 import {
   ConnectionManager,
   ConnectionState,
   StreamlitEndpoints,
   SessionInfo,
+  AppConfig,
+  LibConfig,
+  IHostConfigResponse,
 } from "@streamlit/connection"
 import {
-  AppConfig,
   AppRoot,
   ComponentRegistry,
   createFormsData,
@@ -72,7 +75,6 @@ import {
   createTheme,
   CUSTOM_THEME_NAME,
   DeployedAppMetadata,
-  ensureError,
   extractPageNameFromPathName,
   FileUploadClient,
   FormsData,
@@ -85,7 +87,6 @@ import {
   handleFavicon,
   hashString,
   HostCommunicationManager,
-  IHostConfigResponse,
   IMenuItem,
   isColoredLineDisplayed,
   isEmbed,
@@ -95,7 +96,6 @@ import {
   isScrollingHidden,
   isToolbarDisplayed,
   IToolbarItem,
-  LibConfig,
   LibContext,
   PerformanceEvents,
   preserveEmbedQueryParams,

@@ -23,7 +23,7 @@ export type { ElementNodeRendererProps } from "./components/core/Block/ElementNo
 export { default as IsDialogContext } from "./components/core/IsDialogContext"
 export { default as IsSidebarContext } from "./components/core/IsSidebarContext"
 export { LibContext } from "./components/core/LibContext"
-export type { LibConfig, LibContextProps } from "./components/core/LibContext"
+export type { LibContextProps } from "./components/core/LibContext"
 export { default as ThemeProvider } from "./components/core/ThemeProvider"
 export { default as AlertElement } from "./components/elements/AlertElement"
 export { handleFavicon } from "./components/elements/Favicon"
@@ -52,10 +52,8 @@ export { default as useScrollToBottom } from "./hooks/useScrollToBottom"
 export { default as HostCommunicationManager } from "./hostComm"
 export { HOST_COMM_VERSION } from "./hostComm/HostCommunicationManager"
 export type {
-  AppConfig,
   DeployedAppMetadata,
   IGuestToHostMessage,
-  IHostConfigResponse,
   IMenuItem,
   IToolbarItem,
 } from "./hostComm/types"
@@ -88,7 +86,6 @@ export type { EmotionTheme, PresetThemeName, ThemeConfig } from "./theme"
 export { default as emotionLightTheme } from "./theme/emotionLightTheme"
 export { fonts, spacing } from "./theme/primitives"
 export { useIsOverflowing } from "./util/Hooks"
-export { default as Resolver } from "./util/Resolver"
 export { LocalStore, localStorageAvailable } from "./util/storageUtils"
 export { Timer } from "./util/Timer"
 export {

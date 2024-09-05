@@ -14,14 +14,12 @@
  * limitations under the License.
  */
 
-// These imports are each exported specifically in order to minimize public apis.
-export { ConnectionManager } from "./ConnectionManager"
-export { ConnectionState } from "./ConnectionState"
-export type { JWTHeader, StreamlitEndpoints } from "./StreamlitEndpoints"
-export {
-  mockEndpoints,
-  mockSessionInfo,
-  mockSessionInfoProps,
-} from "@streamlit/connection/src/mocks/mocks"
-export { SessionInfo } from "@streamlit/connection/src/SessionInfo"
-export type { AppConfig, LibConfig, IHostConfigResponse } from "./types/Config"
+import xxhash from "xxhashjs"
+
+/**
+ * A helper function to hash a string using xxHash32 algorithm.
+ * Seed used: 0xDEADBEEF
+ */
+export function hashString(s: string): string {
+  return xxhash.h32(s, 0xdeadbeef).toString(16)
+}

@@ -17,7 +17,6 @@
 import { IAppPage, ICustomThemeConfig } from "@streamlit/proto"
 import { ExportedTheme } from "@streamlit/lib/src/theme"
 import { ScriptRunState } from "@streamlit/lib/src/ScriptRunState"
-import { LibConfig } from "@streamlit/lib/src/components/core/LibContext"
 import { PresetThemeName } from "@streamlit/lib/src/theme/types"
 
 export type DeployedAppMetadata = {
@@ -192,38 +191,3 @@ export type IGuestToHostMessage =
 export type VersionedMessage<Message> = {
   stCommVersion: number
 } & Message
-
-/**
- * The app config contains various configurations that the host platform can
- * use to configure streamlit-app frontend behavior. This should to be treated as part of the public
- * API, and changes need to be backwards-compatible meaning that an old host configuration
- * should still work with a new frontend versions.
- *
- * TODO(lukasmasuch): Potentially refactor HostCommunicationManager and move this type
- * to AppContext.tsx.
- */
-export type AppConfig = {
-  /**
-   * A list of origins that we're allowed to receive cross-iframe messages
-   * from via the browser's window.postMessage API.
-   */
-  allowedOrigins?: string[]
-  /**
-   * Whether to wait until we've received a SET_AUTH_TOKEN message before
-   * resolving deferredAuthToken.promise. The WebsocketConnection class waits
-   * for this promise to resolve before attempting to establish a connection
-   * with the Streamlit server.
-   */
-  useExternalAuthToken?: boolean
-  /**
-   * Enables custom string messages to be sent to the host
-   */
-  enableCustomParentMessages?: boolean
-}
-
-/**
- * The response structure of the `_stcore/host-config` endpoint.
- * This combines streamlit-lib specific configuration options with
- * streamlit-app specific options (e.g. allowed message origins).
- */
-export type IHostConfigResponse = LibConfig & AppConfig

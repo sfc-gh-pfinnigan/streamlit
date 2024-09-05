@@ -15,12 +15,10 @@
  */
 
 import { ICustomThemeConfig, WidgetStates } from "@streamlit/proto"
-import { isValidOrigin } from "@streamlit/lib/src/util/UriUtil"
 import { PresetThemeName } from "@streamlit/lib/src/theme/types"
-import Resolver from "@streamlit/lib/src/util/Resolver"
+import { isValidOrigin, Resolver } from "@streamlit/utils"
 
 import {
-  AppConfig,
   DeployedAppMetadata,
   IGuestToHostMessage,
   IHostToGuestMessage,
@@ -28,6 +26,7 @@ import {
   IToolbarItem,
   VersionedMessage,
 } from "./types"
+import { AppConfig } from "@streamlit/connection"
 
 export const HOST_COMM_VERSION = 1
 

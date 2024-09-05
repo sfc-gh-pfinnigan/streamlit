@@ -23,6 +23,13 @@ export {
   requireNonNull,
 } from "./utils"
 export { logAlways, logError, logMessage, logWarning } from "./log"
-export { buildHttpUri, buildWsUri, getPossibleBaseUris } from "./UriUtil"
+export {
+  isValidOrigin,
+  buildHttpUri,
+  buildWsUri,
+  getPossibleBaseUris,
+} from "./UriUtil"
 export type { BaseUriParts } from "./UriUtil"
 export { ensureError } from "./ErrorHandling"
+export { default as Resolver } from "./Resolver"
+export { hashString } from "./hashString"
