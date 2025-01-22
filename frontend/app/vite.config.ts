@@ -79,11 +79,14 @@ export default defineConfig({
     port: 3000,
   },
   build: {
+    minify: false,
     outDir: "build",
     assetsDir: "static",
     sourcemap: DEV_BUILD,
     rollupOptions: {
       output: {
+        inlineDynamicImports: true,
+        minifyInternalExports: false,
         // Customize the chunk file naming pattern to match static/js/[name].[hash].js
         chunkFileNames: `static/js/[name]${HASH}.js`,
         entryFileNames: `static/js/[name]${HASH}.js`,
